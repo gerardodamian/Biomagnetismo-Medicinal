@@ -304,11 +304,12 @@ body.contacto {
   padding: 20px;
 }
 .h3-contacto {
+ 
   color: bisque;
   border: 3px solid brown;
   border-radius: 5px;
   margin-top: 40px;
-  font-size: 15px;
+  font-size: 35px;
 }
 .contenedor {
   background-color: rgba(255, 0, 0, 0.534);
