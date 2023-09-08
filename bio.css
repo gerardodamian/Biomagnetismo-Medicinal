@@ -368,7 +368,7 @@ body.contacto {
 }
 @media only screen and (min-width: 320px) and (max-width: 520px) {
   header .contacto {
-    width: 200px;
+    width: 400px;
   }
   .body-contacto {
     width: 400px;
@@ -381,7 +381,7 @@ body.contacto {
   }
 
   .contenedor {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
     grid-template-rows: repeat(8, 200px);
     grid-template-areas:
       "img1"
@@ -392,6 +392,11 @@ body.contacto {
       "img6"
       "img7"
       "img8";
+  }
+  form {
+    margin: 0 auto;
+    width: 100px;
+    padding: 1em;
   }
 }
 @media only screen and (min-width: px) and (max-width: 1023px) {
@@ -420,7 +425,7 @@ body.contacto {
 }
 form {
   margin: 0 auto;
-  width: 400px;
+  width: 600px;
   background-color: pink;
   padding: 1em;
   border: 3px solid #5a0e0e;
