@@ -1,6 +1,6 @@
 @font-face {
-  font-family: booter;
-  src: url(font/BOOTERFF.ttf);
+    font-family: booter;
+    src: url(font/BOOTERFF.ttf);
 }
 
 @import url("https://fonts.googleapis.com/css2? family= Caprasimo & family= Handjet:wght@300 & display=swap");
@@ -10,860 +10,853 @@ font-family: 'Handjet', cursive;
 */
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
-header {
-  background-color: rgba(63, 53, 58, 0.538);
-  height: 80px;
-  width: 90%;
-  font-weight: 300;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
-  padding: 30px;
+.header-inicio {
+    background-color: rgba(63, 53, 58, 0.538);
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 30px;
+    height: 120px;
 }
-h1 {
-  background-color: red;
-  text-align: center;
-  width: 100%;
+.inicio-titulo {
+    background-color: red;
+    text-align: center;
+    margin: 1rem;
+    width: 100%;
 }
 
 .logo {
-  float: left;
-  color: red;
+    float: left;
+    color: red;
 }
 .logo span {
-  color: black;
+    color: black;
 }
 .barra {
-  float: right;
+    float: right;
 }
 .barra ul li {
-  list-style: none;
-  display: inline-block;
+    list-style: none;
+    display: inline-block;
 }
 .barra a {
-  color: rgb(157, 8, 8);
-  text-decoration: none;
-  text-shadow: 1px 1px 2px white;
+    color: rgb(157, 8, 8);
+    text-decoration: none;
+    text-shadow: 1px 1px 2px white;
 }
 .barra a:hover {
-  color: rgb(227, 223, 223);
+    color: rgb(227, 223, 223);
 }
 .cartel {
-  font-style: normal;
+    font-style: normal;
 }
 .body-home {
-  background-image: url(../pages/multimedia/biomagnetismo.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 1000px;
-  width: 100%;
+    background-image: url(../pages/multimedia/biomagnetismo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 .main-home {
-  height: 300px;
-  width: 100%;
-  background-color: rgb(43, 42, 42);
-  background-image: url(../pages/multimedia/biomagnetismo.jpg);
-  background-size: cover;
-  background-position: center;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(43, 42, 42);
+    background-image: url(../pages/multimedia/biomagnetismo.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .section-home {
-  display: flex;
-  background-color: rgba(255, 0, 0, 0.502);
-  justify-content: space-between;
-  padding: 20px;
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.502);
+    justify-content: space-between;
+    padding: 20px;
 }
 .card-home {
-  width: 30%;
-  background-color: #333;
-  border: 7px solid red;
+    background-color: #333;
+    border: 7px solid red;
 }
 
 .card__img {
-  height: 200px;
-  background-image: url(pages/multimedia/card1.jpeg);
-  background-size: cover;
-  background-position: center;
+    height: 200px;
+    background-image: url(pages/multimedia/card1.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 .card__img2 {
-  height: 200px;
-  background-image: url(pages/multimedia/card2.jpeg);
-  background-size: cover;
-  background-position: center;
+    height: 200px;
+    background-image: url(pages/multimedia/card2.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 .card__img3 {
-  height: 200px;
-  background-image: url(pages/multimedia/card3.jpeg);
-  background-size: cover;
-  background-position: center;
+    height: 200px;
+    background-image: url(pages/multimedia/card3.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
 .card__title {
-  text-align: center;
-  color: red;
-  font-size: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .card__desc {
-  padding: 20px;
-  color: #fff;
+    padding: 20px;
+    color: #fff;
 }
 .card__boton {
-  background-color: red;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  display: block;
-  text-align: center;
-  width: 60%;
-  margin: 20px auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: 20px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .card__boton:hover {
-  background-color: rgb(159, 63, 63);
-  color: #333;
+    background-color: rgb(159, 63, 63);
+    color: #333;
 }
 .card__img4 {
-  height: 200px;
-  height: 400px;
-  background-image: url(pages/multimedia/card4.jpg);
-  background-size: cover;
-  background-position: center;
+    height: 400px;
+    background-image: url(pages/multimedia/card4.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .card__desc--align {
-  text-align: center;
-  font-size: 30px;
+    text-align: center;
+    font-size: 30px;
 }
 .card-home--xl {
-  width: 100%;
+    width: 100%;
 }
 .card__boton--size {
-  width: 50%;
+    width: 50%;
 }
 .card__img5 {
-  height: 200px;
-  background-image: url(pages/multimedia/card5.jpg);
-  background-size: cover;
-  background-position: center;
+    height: 200px;
+    background-image: url(pages/multimedia/card5.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .card__img6 {
-  height: 200px;
-  background-image: url(pages/multimedia/card6.jpg);
-  background-size: cover;
-  background-position: center;
+    height: 200px;
+    background-image: url(pages/multimedia/card6.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .card-home--lg {
-  width: 50%;
-  margin: 10px;
+    width: 50%;
+    margin: 10px;
 }
 
 audio {
-  padding: 20px;
+    padding: 20px;
 }
 .call-home {
-  color: aliceblue;
-  width: 70%;
-  background-color: rgba(156, 59, 59, 0.679);
-  border: 4px solid black;
-  padding: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  float: right;
-  margin: 30px;
+    color: aliceblue;
+    width: 70%;
+    background-color: rgba(156, 59, 59, 0.679);
+    border: 4px solid black;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    margin: 30px;
 }
 p.cartel {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .h2-home {
-  color: red;
-  margin-bottom: 20px;
+    color: red;
+    margin-bottom: 20px;
 }
 .p-home {
-  border: 3px solid black;
-  padding: 20px;
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(170, 187, 180);
+    border: 3px solid black;
+    padding: 20px;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(170, 187, 180);
 }
 
 .parr a {
-  text-decoration: none;
-  color: red;
+    text-decoration: none;
+    color: red;
 }
 .call-home a {
-  background-color: red;
-  color: aliceblue;
-  text-decoration: none;
-  padding: 10px 20px;
+    background-color: red;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 .call-home a:hover {
-  background-color: maroon;
+    background-color: maroon;
 }
 p {
-  color: pink;
+    color: pink;
 }
 .footer-home {
-  height: 200px;
-  background-color: red;
+    height: 200px;
+    background-color: red;
 }
 @media only screen and (min-width: 320px) and (max-widht: 488px) {
-  body {
-    width: 60%;
-    height: 1200px;
-    padding: 20px;
-  }
-  h1 {
-    width: 120%;
-    font-size: 40px;
-  }
-  .p {
-    font-size: 4px;
-  }
+    body {
+        width: 60%;
+        padding: 20px;
+    }
+    h1 {
+        width: 120%;
+        font-size: 40px;
+    }
+    .p {
+        font-size: 4px;
+    }
 }
 @media only screen and (min-width: 768px) {
-  body {
-    width: 100%;
-  }
+    body {
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 1150px) {
-  body {
-    width: 100%;
-    .barra a {
-      font-size: 20px;
+    body {
+        width: 100%;
+        .barra a {
+            font-size: 20px;
+        }
     }
-  }
 }
 
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 footer {
-  background-color: brown;
+    background-color: brown;
 }
 footer a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
 }
 .pie {
-  margin-top: 20px;
-  margin: 80px;
-  text-align: center;
+    margin-top: 20px;
+    margin: 80px;
+    text-align: center;
 }
 .whatsapp {
-  height: 30px;
+    background-color: rgb(241, 246, 244);
+    color: white;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
 
-  background-color: rgb(241, 246, 244);
-  color: white;
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  text-align: center;
-
-  border-radius: 50%;
-  font-size: 25px;
+    border-radius: 50%;
+    font-size: 25px;
 }
 .whatsapp a {
-  color: rgb(12, 193, 15);
+    color: rgb(12, 193, 15);
 }
 .leg {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 .largo {
-  color: aliceblue;
-  font-size: 15px;
-  margin: 20px 20px 20px 20px;
+    color: aliceblue;
+    font-size: 15px;
+    margin: 20px 20px 20px 20px;
 }
 /*empieza contacto*/
 
-body.contacto {
-  height: 100vp;
-  width: 100%;
-  background-image: url(pages/multimedia/biomagnetismo.jpg);
-  background-size: cover;
-  background-position: center;
+.body-contacto {
+    height: 100vw;
+    width: 100%;
+    background-image: url(pages/multimedia/biomagnetismo.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .h2-contacto {
-  font-size: 60px;
+    font-size: 60px;
 
-  margin: 20px;
+    margin: 20px;
 }
 .inicio-contacto {
-  background-color: red;
-  color: aliceblue;
-  text-decoration: none;
-  padding: 10px;
-  margin: 20px;
-  position: fixed;
-  left: 200px;
-  bottom: 70px;
+    background-color: red;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    position: fixed;
+    right: 15px;
+    bottom: 70px;
 }
 
 .inicio-contacto:hover {
-  background-color: rgb(223, 120, 125);
-  color: black;
-  padding: 20px;
+    background-color: rgb(223, 120, 125);
+    color: black;
+    padding: 20px;
 }
 .h3-contacto {
- 
-  color: bisque;
-  border: 3px solid brown;
-  border-radius: 5px;
-  margin-top: 40px;
-  font-size: 35px;
+    color: bisque;
+    border: 3px solid brown;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: 35px;
 }
 .contenedor {
-  background-color: rgba(255, 0, 0, 0.534);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 200px);
-  grid-template-areas:
-    "img1 img2 img3 img3"
-    "img1 img4 img5 img6"
-    "img7 img4 img8 img8";
-  grid-gap: 15px;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.item1 {
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  transition: all 0.9s;
-  border: 2px solid black;
-}
-.item1:hover {
-  transform: scale(1.09);
-}
-.item1 {
-  background-image: url(pages/multimedia/contacto1.jpg);
-  grid-area: img1;
-}
-.item2 {
-  background-image: url(pages/multimedia/contacto2.jpg);
-  grid-area: img2;
-}
-.item3 {
-  background-image: url(pages/multimedia/contacto3.jpg);
-  grid-area: img3;
-}
-.item4 {
-  background-image: url(pages/multimedia/contacto4.jpg);
-  grid-area: img4;
-}
-.item5 {
-  background-image: url(pages/multimedia/contacto5.jpg);
-  grid-area: img5;
-}
-.item6 {
-  background-image: url(pages/multimedia/contacto6.jpg);
-  grid-area: img6;
-}
-.item7 {
-  background-image: url(pages/multimedia/contacto7.jpg);
-  grid-area: img7;
-}
-.item8 {
-  background-image: url(pages/multimedia/contacto8.jpg);
-  grid-area: img8;
-}
-@media only screen and (min-width: 320px) and (max-width: 520px) {
-  header .contacto {
-    width: 400px;
-  }
-  .body-contacto {
-    width: 400px;
-  }
-  .h2-contacto {
-    color: black;
-    margin: 2px;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .contenedor {
-    grid-template-columns: 1fr ;
-    grid-template-rows: repeat(8, 200px);
-    grid-template-areas:
-      "img1"
-      "img2"
-      "img3"
-      "img4"
-      "img5"
-      "img6"
-      "img7"
-      "img8";
-  }
-  form {
-    margin: 0 auto;
-    width: 100px;
-    padding: 1em;
-  }
-}
-@media only screen and (min-width: px) and (max-width: 1023px) {
-  .h2-contacto {
-    font-size: 40px;
-  }
-  header.contacto {
-    width: 900px;
-  }
-  .contenedor {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 200px);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .contenedor {
+    background-color: rgba(255, 0, 0, 0.534);
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 200px);
-  }
+    grid-template-areas:
+        "img1 img2 img3 img3"
+        "img1 img4 img5 img6"
+        "img7 img4 img8 img8";
+    grid-gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.item1 {
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 0.9s;
+    border: 2px solid black;
+}
+.item1:hover {
+    transform: scale(1.09);
+}
+.item1 {
+    background-image: url(pages/multimedia/contacto1.jpg);
+    grid-area: img1;
+}
+.item2 {
+    background-image: url(pages/multimedia/contacto2.jpg);
+    grid-area: img2;
+}
+.item3 {
+    background-image: url(pages/multimedia/contacto3.jpg);
+    grid-area: img3;
+}
+.item4 {
+    background-image: url(pages/multimedia/contacto4.jpg);
+    grid-area: img4;
+}
+.item5 {
+    background-image: url(pages/multimedia/contacto5.jpg);
+    grid-area: img5;
+}
+.item6 {
+    background-image: url(pages/multimedia/contacto6.jpg);
+    grid-area: img6;
+}
+.item7 {
+    background-image: url(pages/multimedia/contacto7.jpg);
+    grid-area: img7;
+}
+.item8 {
+    background-image: url(pages/multimedia/contacto8.jpg);
+    grid-area: img8;
+}
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    header .contacto {
+        width: 400px;
+    }
+    .body-contacto {
+        width: 400px;
+    }
+    .h2-contacto {
+        color: black;
+        margin: 2px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8";
+    }
+    form {
+        margin: 0 auto;
+        width: 100px;
+        padding: 1em;
+    }
+}
+@media only screen and (min-width: px) and (max-width: 1023px) {
+    .h2-contacto {
+        font-size: 40px;
+    }
+    header.contacto {
+        width: 900px;
+    }
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
 }
 
 .turno {
-  text-align: center;
-  font-size: 50px;
-  color: red;
+    text-align: center;
+    font-size: 50px;
+    color: red;
 }
 form {
-  margin: 0 auto;
-  width: 600px;
-  background-color: pink;
-  padding: 1em;
-  border: 3px solid #5a0e0e;
-  border-radius: 1em;
+    margin: 0 auto;
+    width: 90%;
+    background-color: pink;
+    padding: 1em;
+    border: 3px solid #5a0e0e;
+    border-radius: 1em;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 form li + li {
-  margin-top: 1em;
+    margin-top: 1em;
 }
 
 label {
-  display: inline-block;
-  width: 90px;
-  text-align: right;
+    display: inline-block;
+    width: 90px;
+    text-align: right;
 }
 
 input,
 textarea {
-  font: 1em sans-serif;
+    font: 1em sans-serif;
 
-  width: 300px;
-  box-sizing: border-box;
+    width: 300px;
+    box-sizing: border-box;
 
-  border: 1px solid #999;
+    border: 1px solid #999;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #000;
+    border-color: #000;
 }
 
 textarea {
-  vertical-align: top;
+    vertical-align: top;
 
-  height: 5em;
+    height: 5em;
 }
 
 .button {
-  padding-left: 90px;
+    padding-left: 90px;
 }
 
 button {
-  margin-left: 0.5em;
-  width: 105px;
-  height: 70px;
-  background-color: rgb(220, 6, 6);
-  border-radius: 5px;
-  color: #fff;
+    margin-left: 0.5em;
+    width: 105px;
+    height: 70px;
+    background-color: rgb(220, 6, 6);
+    border-radius: 5px;
+    color: #fff;
 }
 
 button:hover {
-  background-color: #5a0e0e;
-  color: #999;
+    background-color: #5a0e0e;
+    color: #999;
 }
-
 
 .parr {
-  color: antiquewhite;
+    color: antiquewhite;
 }
 a {
-  text-decoration: none;
-  color: antiquewhite;
+    text-decoration: none;
+    color: antiquewhite;
 }
 
 h3 {
-  text-align: center;
+    text-align: center;
 }
 
 .pie {
-  color: aliceblue;
-  text-align: center;
+    color: aliceblue;
+    text-align: center;
 }
 /*empieza Ubicacion*/
 
 .nav-item:hover {
-  background-color: #333;
-  border-radius: 10px;
+    background-color: #333;
+    border-radius: 10px;
 }
 .collapse {
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 .jumbotron {
-  background-image: url(pages/multimedia/consultorio.jpg);
-  background-position: center;
-  background-size: cover;
+    background-image: url(pages/multimedia/consultorio.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .nav-link {
-  color: #fff !important;
+    color: #fff !important;
 }
 .ubic {
-  color: #fff;
+    color: #fff;
 }
 .ubicacion {
-  height: 50px;
-  text-align: center;
-  border: 2px solid rgb(49, 5, 5);
-  margin-bottom: 0;
+    height: 50px;
+    text-align: center;
+    border: 2px solid rgb(49, 5, 5);
+    margin-bottom: 0;
 }
 .nleft {
-  height: 400px;
-  background-image: url(pages/multimedia/con2.jpg);
-  background-position: center;
-  background-size: cover;
+    height: 400px;
+    background-image: url(pages/multimedia/con2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .footer-ubicacion {
-  height: 200px;
-  padding: 20px;
+    height: 200px;
+    padding: 20px;
 }
 @media only screen and (min-width: 320px) and (max-width: 450px) {
-  .footer-ubicacion {
-    height: 400px;
-  }
+    .footer-ubicacion {
+        height: 400px;
+    }
 }
 
 /*empieza informacion*/
 
 .body-informacion {
-  background-image: url("pages/multimedia/fondoinfo.jpg");
-  background-position: center;
-  background-size: cover;
+    background-image: url("pages/multimedia/fondoinfo.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .body-informacion h1 {
-  border: 3px solid red;
+    border: 3px solid red;
 
-  padding: 20px;
-  color: rgb(24, 23, 23);
+    padding: 20px;
+    color: rgb(24, 23, 23);
 }
 .inicio a {
-  background-color: red;
-  color: rgb(127, 166, 201);
-  text-decoration: none;
-  padding: 20px;
-  border-radius: 10px;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
+    background-color: red;
+    color: rgb(127, 166, 201);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
 }
 
 h2.info {
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  padding: 20px;
-  color: rgb(42, 4, 4);
-  border: 2px solid rgb(42, 4, 4);
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding: 20px;
+    color: rgb(42, 4, 4);
+    border: 2px solid rgb(42, 4, 4);
 }
 .galeria {
-  /*height: 700px;*/
-  width: 100%;
-  background-color: rgb(54, 123, 131);
+    /*height: 700px;*/
+    width: 100%;
+    background-color: rgb(54, 123, 131);
 
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(8, 200px);
-  padding: 20px;
-  grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 10px;
 }
 .item {
-  background-position: center;
-  background-size: cover;
-  border: 2px solid blue;
-  border-radius: 10px;
-  transition: all 0.9s;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid blue;
+    border-radius: 10px;
+    transition: all 0.9s;
 }
 .item:hover {
-  transform: scale(1.09);
+    transform: scale(1.09);
 }
 
 .item9 {
-  background-image: url(pages/multimedia/info1.jpg);
+    background-image: url(pages/multimedia/info1.jpg);
 }
 .item10 {
-  background-image: url(pages/multimedia/info2.jpg);
+    background-image: url(pages/multimedia/info2.jpg);
 }
 .item11 {
-  background-image: url(pages/multimedia/info3.jpg);
+    background-image: url(pages/multimedia/info3.jpg);
 }
 .item12 {
-  background-image: url(pages/multimedia/info4.jpg);
+    background-image: url(pages/multimedia/info4.jpg);
 }
 .item13 {
-  background-image: url(pages/multimedia/info5.jpg);
+    background-image: url(pages/multimedia/info5.jpg);
 }
 .item14 {
-  background-image: url(pages/multimedia/info6.jpg);
+    background-image: url(pages/multimedia/info6.jpg);
 }
 .item15 {
-  background-image: url(pages/multimedia/info7.jpg);
+    background-image: url(pages/multimedia/info7.jpg);
 }
 .item16 {
-  background-image: url(pages/multimedia/info8.jpg);
+    background-image: url(pages/multimedia/info8.jpg);
 }
 @media only screen and (min-width: 480px) {
-  .galeria {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 200px);
-  }
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-  .item1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-  .item2 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .item3 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  .item4 {
-    grid-column: 2/4;
-    grid-row: 2/3;
-  }
-  .item5 {
-    grid-column: 1/3;
-    grid-row: 3/4;
-  }
-  .item6 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-  .item7 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-  .item8 {
-    grid-column: 2/4;
-    grid-row: 4/5;
-  }
+    .item1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .item2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item5 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .item6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .item7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .item8 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
 }
 @media only screen and (min-width: 1024px) {
-  .galeria {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 200px);
-  }
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
 }
 
 p {
-  padding: 20px;
-  color: black;
-  font-weight: 200;
+    padding: 20px;
+    color: black;
+    font-weight: 200;
 }
 
 h4 {
-  padding: 20px;
+    padding: 20px;
 }
-footer a {
-  margin: 20px;
-  text-decoration: none;
-  padding: 20px;
-}
+
 .footer-info {
-  background-color: rgb(42, 118, 165);
+    background-color: rgb(42, 118, 165);
 }
 
 /*empieza terapeutas */
 
 .header-ter {
-  width: 97%;
-  height: 80px;
-  background-color: red;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  font-size: 35px;
+    height: 80px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 35px;
 }
 .logo-ter {
-  color: aliceblue;
-  font-family: "Barriecito";
-  font-weight: bold;
-  font-size: 50px;
+    color: aliceblue;
+    font-family: "Barriecito";
+    font-weight: bold;
+    font-size: 50px;
 }
 .barra-ter ul li {
-  list-style: none;
-  display: inline-block;
-
+    list-style: none;
+    display: inline-block;
 }
 .barra-ter a {
-  text-decoration: none;
-  color: pink;
-  font-size: 20px;
+    text-decoration: none;
+    color: pink;
+    font-size: 20px;
 }
 .barra-ter a:hover {
-  color: rgb(53, 1, 1);
+    color: rgb(53, 1, 1);
 }
 .main-ter {
-  height: calc(100vh - 80px);
-  background-image: url(pages/multimedia/fondoter.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+    background-image: url(pages/multimedia/fondoter.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .h1-ter {
-  color: rgb(61, 42, 42);
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 0px white;
-  height: 50px;
+    color: rgb(61, 42, 42);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0px white;
+    height: 50px;
 }
 .call p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .call {
-  background-color: rgba(255, 0, 0, 0.485);
-  height: 70%;
-  width: 65%;
-  padding: 20px;
-  text-shadow: 2px 2px 5px white;
-  border-radius: 8px;
+    background-color: rgba(255, 0, 0, 0.485);
+    width: 65%;
+    margin: 2rem;
+    padding: 20px;
+    text-shadow: 2px 2px 5px white;
+    border-radius: 8px;
 }
 
 .call a {
-  background-color: red;
-  color: aliceblue;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  border: 2px solid black;
+    background-color: red;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid black;
 }
 .call a:hover {
-  color: darkslategray;
-  border: 2px solid white;
-  background-color: hotpink;
+    color: darkslategray;
+    border: 2px solid white;
+    background-color: hotpink;
 }
 .ter {
-  text-align: center;
-  background-color: red;
-  font-size: 30px;
-  padding: 20px;
+    text-align: center;
+    background-color: red;
+    font-size: 30px;
+    padding: 20px;
 }
-section {
-  display: flex;
-  height: 700px;
-  width: 100%;
-  background-color: rgb(94, 42, 42);
-  justify-content: space-evenly;
-  align-items: center;
-}
-.card {
-  background-color: pink;
-  height: 550px;
-  width: 30%;
-  border: 2px solid black;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px white;
-}
+.terapeutas-cards {
+    display: flex;
+    background-color: rgb(94, 42, 42);
+    justify-content: space-evenly;
+    align-items: center;
 
-.card-img {
-  height: 200px;
-  width: 100%;
-  background-image: url(pages/multimedia/mujer.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
-.card1-img {
-  height: 200px;
-  width: 100%;
-  background-image: url(pages/multimedia/hombre.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 0px, 0px, 10px, 10px;
-}
+    .card {
+        background-color: pink;
+        border: 2px solid black;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px white;
+        margin: 1rem;
+        width: 300px;
+    }
 
-.card h2 {
-  color: pink;
-}
-.card h3 {
-  font-size: 25px;
-}
-.card p {
-  padding: 15px;
-}
-.card .redes a {
-  color: red;
-  font-size: 35px;
-  letter-spacing: 13px;
+    .card-img {
+        height: 200px;
+        background-image: url(pages/multimedia/mujer.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+    .card1-img {
+        height: 200px;
+        background-image: url(pages/multimedia/hombre.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 0px, 0px, 10px, 10px;
+    }
+
+    .card h2 {
+        color: pink;
+    }
+    .card h3 {
+        font-size: 25px;
+    }
+    .card p {
+        padding: 15px;
+    }
+    .card .redes a {
+        color: red;
+        font-size: 35px;
+        letter-spacing: 13px;
+    }
 }
 
 body {
-  background-color: pink;
+    background-color: pink;
 }
 
 .ult {
-  border: 2px solid black;
-  padding: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 15px;
-  color: red;
+    border: 2px solid black;
+    padding: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 15px;
+    color: red;
 }
 .footer-ter {
-  background-color: brown;
+    background-color: brown;
 
-  text-align: center;
+    text-align: center;
 }
 .footer-ter a {
-  text-decoration: none;
+    text-decoration: none;
 }
 @media only screen and (min-width: 320px) and (max-width: 545px) {
-  .call {
-    height: 70%;
-  }
+    header {
+        height: 100px;
+        font-size: 17px;
+    }
 
-  header {
-    height: 100px;
-    font-size: 17px;
-  }
-  .logo {
-    font-size: 20px;
-  }
-  .barra a {
-    margin: 20px;
-  }
-  h2 {
-    font-size: 18px;
-  }
-  h3 {
-    font-size: 5px;
-  }
-  .card {
-    width: 35%;
-    height: 500px;
-    margin: 15px;
-  }
+    .header-ter {
+        display: flex;
+        flex-direction: column;
+        .logo-ter {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+
+    .section-home {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 300px);
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+    .barra a {
+        margin: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 5px;
+    }
+
+    .terapeutas-cards {
+      flex-direction: column;
+    }
 }
