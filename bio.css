@@ -860,3 +860,11 @@ body {
       flex-direction: column;
     }
 }
+    .navbar-brand{
+    font-size: 50px ;
+}
+@media only screen and (min-width: 320px) and (max-width: 545px){
+    inframe{
+        width: "30";
+    }
+}
