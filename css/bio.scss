@@ -13,6 +13,7 @@
   $color3: green;
   $color4:  rgba(63, 53, 58, 0.538);
   $color5: white;
+  $color6: black;
   $font1: booter;
   
   * {
@@ -89,19 +90,19 @@
   
   .card__img {
     height: 200px;
-    background-image: url(pages/multimedia/card1.jpeg);
+    background-image: url(../pages/multimedia/card1.jpeg);
     background-size: cover;
     background-position: center;
   }
   .card__img2 {
     height: 200px;
-    background-image: url(pages/multimedia/card2.jpeg);
+    background-image: url(../pages/multimedia/card2.jpeg);
     background-size: cover;
     background-position: center;
   }
   .card__img3 {
     height: 200px;
-    background-image: url(pages/multimedia/card3.jpeg);
+    background-image: url(../pages/multimedia/card3.jpeg);
     background-size: cover;
     background-position: center;
   }
@@ -134,7 +135,7 @@
   .card__img4 {
     height: 200px;
     height: 400px;
-    background-image: url(pages/multimedia/card4.jpg);
+    background-image: url(../pages/multimedia/card4.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -150,13 +151,13 @@
   }
   .card__img5 {
     height: 200px;
-    background-image: url(pages/multimedia/card5.jpg);
+    background-image: url(../pages/multimedia/card5.jpg);
     background-size: cover;
     background-position: center;
   }
   .card__img6 {
     height: 200px;
-    background-image: url(pages/multimedia/card6.jpg);
+    background-image: url(../pages/multimedia/card6.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -285,7 +286,7 @@
   body.contacto {
     height: 100vp;
     width: 100%;
-    background-image: url(pages/multimedia/biomagnetismo.jpg);
+    background-image: url(../pages/multimedia/biomagnetismo.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -344,36 +345,39 @@
     transform: scale(1.09);
   }
   .item1 {
-    background-image: url(pages/multimedia/contacto1.jpg);
+    background-image: url(../pages/multimedia/contacto1.jpg);
     grid-area: img1;
   }
   .item2 {
-    background-image: url(pages/multimedia/contacto2.jpg);
+    background-image: url(../pages/multimedia/contacto2.jpg);
     grid-area: img2;
   }
   .item3 {
-    background-image: url(pages/multimedia/contacto3.jpg);
+    background-image: url(../pages/multimedia/contacto3.jpg);
     grid-area: img3;
   }
   .item4 {
-    background-image: url(pages/multimedia/contacto4.jpg);
+    background-image: url(../pages/multimedia/contacto4.jpg);
     grid-area: img4;
   }
   .item5 {
-    background-image: url(pages/multimedia/contacto5.jpg);
+    background-image: url(../pages/multimedia/contacto5.jpg);
     grid-area: img5;
   }
   .item6 {
-    background-image: url(pages/multimedia/contacto6.jpg);
+    background-image: url(../pages/multimedia/contacto6.jpg);
     grid-area: img6;
   }
   .item7 {
-    background-image: url(pages/multimedia/contacto7.jpg);
+    background-image: url(../pages/multimedia/contacto7.jpg);
     grid-area: img7;
   }
   .item8 {
-    background-image: url(pages/multimedia/contacto8.jpg);
+    background-image: url(../pages/multimedia/contacto8.jpg);
     grid-area: img8;
+  }
+  .parr{
+    color: $color6;
   }
   @media only screen and (min-width: 320px) and (max-width: 520px) {
     header .contacto {
@@ -450,7 +454,7 @@
     justify-content: end;
   }
   .jumbotron{
-    background-image: url(pages/multimedia/consultorio.jpg);
+    background-image: url(../pages/multimedia/consultorio.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -468,7 +472,7 @@
   }
   .nleft{
     height: 400px;
-  background-image: url(pages/multimedia/con2.jpg);
+  background-image: url(../pages/multimedia/con2.jpg);
   background-position: center;
   background-size: cover;
   }
@@ -485,7 +489,7 @@
   /*empieza informacion*/
   
   .body-informacion {
-    background-image: url("pages/multimedia/fondoinfo.jpg");
+    background-image: url("../pages/multimedia/fondoinfo.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -537,28 +541,28 @@
   }
   
   .item9 {
-    background-image: url(pages/multimedia/info1.jpg);
+    background-image: url(../pages/multimedia/info1.jpg);
   }
   .item10 {
-    background-image: url(pages/multimedia/info2.jpg);
+    background-image: url(../pages/multimedia/info2.jpg);
   }
   .item11 {
-    background-image: url(pages/multimedia/info3.jpg);
+    background-image: url(../pages/multimedia/info3.jpg);
   }
   .item12 {
-    background-image: url(pages/multimedia/info4.jpg);
+    background-image: url(../pages/multimedia/info4.jpg);
   }
   .item13 {
-    background-image: url(pages/multimedia/info5.jpg);
+    background-image: url(../pages/multimedia/info5.jpg);
   }
   .item14 {
-    background-image: url(pages/multimedia/info6.jpg);
+    background-image: url(../pages/multimedia/info6.jpg);
   }
   .item15 {
-    background-image: url(pages/multimedia/info7.jpg);
+    background-image: url(../pages/multimedia/info7.jpg);
   }
   .item16 {
-    background-image: url(pages/multimedia/info8.jpg);
+    background-image: url(../pages/multimedia/info8.jpg);
   }
   @media only screen and (min-width: 480px) {
     .galeria {
@@ -659,7 +663,7 @@
   }
   .main-ter {
     height: calc(100vh - 80px);
-    background-image: url(pages/multimedia/fondoter.jpg);
+    background-image: url(../pages/multimedia/fondoter.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -726,7 +730,7 @@
   .card-img {
     height: 200px;
     width: 100%;
-    background-image: url(pages/multimedia/mujer.jpg);
+    background-image: url(../pages/multimedia/mujer.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -734,7 +738,7 @@
   .card1-img {
     height: 200px;
     width: 100%;
-    background-image: url(pages/multimedia/hombre.jpg);
+    background-image: url(../pages/multimedia/hombre.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 0px, 0px, 10px, 10px;
@@ -761,7 +765,7 @@
   }
   
   .ult {
-    border: 2px solid black;
+    border: 2px solid $color6;
     padding: 20px;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 15px;
