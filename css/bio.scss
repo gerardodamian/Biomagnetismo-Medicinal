@@ -15,6 +15,8 @@ $color4: rgba(63, 53, 58, 0.538);
 $color5: white;
 $color6: black;
 $font1: booter;
+$font2: Verdana, Geneva, Tahoma, sans-serif;
+
 
 * {
     margin: 0;
@@ -110,7 +112,7 @@ h1 {
     text-align: center;
     color: $color1;
     font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $font2;
 }
 .card__desc {
     padding: 20px;
