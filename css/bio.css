@@ -248,6 +248,9 @@ p {
   .p {
     font-size: 4px;
   }
+  .card-home h3 {
+    font-size: 10px;
+  }
 }
 @media only screen and (min-width: 768px) {
   body {
@@ -910,9 +913,9 @@ body {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 545px) {
+@media only screen and (min-width: 320px) and (max-width: 580px) {
   .call {
-    height: 70%;
+    height: 100%;
   }
   header {
     height: 100px;
@@ -932,8 +935,17 @@ body {
   }
   .card {
     width: 35%;
-    height: 500px;
+    height: 800px;
     margin: 15px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .terapeutas-cards {
+    height: 800px;
+  }
+  .ter {
+    font-size: 17px;
   }
 }
 
