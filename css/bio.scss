@@ -16,6 +16,9 @@ $color5: white;
 $color6: black;
 $font1: booter;
 $font2: Verdana, Geneva, Tahoma, sans-serif;
+$zise1: 15px;
+$zise2: 20px;
+$zise3: 25px;
 
 
 * {
@@ -28,7 +31,7 @@ header {
     width: 90%;
     font-weight: 300;
     font-family: $font1;
-    font-size: 14px;
+    font-size: $zise1;
     padding: 30px;
 }
 h1 {
@@ -81,7 +84,7 @@ h1 {
     display: flex;
     background-color: $color1;
     justify-content: space-between;
-    padding: 20px;
+    padding: $zise2;
 }
 .card-home {
     width: 30%;
@@ -111,7 +114,7 @@ h1 {
 .card__title {
     text-align: center;
     color: $color1;
-    font-size: 24px;
+    font-size: $zise3;
     font-family: $font2;
 }
 .card__desc {
@@ -126,7 +129,7 @@ h1 {
     display: block;
     text-align: center;
     width: 60%;
-    margin: 20px auto;
+    margin: $zise2 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .card__boton:hover {
@@ -168,20 +171,20 @@ h1 {
 }
 
 audio {
-    padding: 20px;
+    padding: $zise2;
 }
 .call-home {
     color: $color5;
     width: 70%;
     background-color: rgba(156, 59, 59, 0.679);
     border: 4px solid black;
-    padding: 20px;
+    padding: $zise2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: right;
     margin: 30px;
 }
 p.cartel {
-    margin-bottom: 20px;
+    margin-bottom: $zise2;
 }
 .h2-home {
     color: $color1;
@@ -189,7 +192,7 @@ p.cartel {
 }
 .p-home {
     border: 3px solid black;
-    padding: 20px;
+    padding: $zise2;
     font-family: "Times New Roman", Times, serif;
     color: $color5;
 }
@@ -202,7 +205,7 @@ p.cartel {
     background-color: $color1;
     color: $color5;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px $zise2;
 }
 .call-home a:hover {
     background-color: maroon;
@@ -218,7 +221,7 @@ p {
     body {
         width: 60%;
         height: 1200px;
-        padding: 20px;
+        padding: $zise2;
     }
     h1 {
         width: 120%;
@@ -240,7 +243,7 @@ p {
     body {
         width: 100%;
         .barra a {
-            font-size: 20px;
+            font-size: $zise2;
         }
     }
 }
@@ -254,10 +257,10 @@ footer {
 footer a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: $zise2;
 }
 .pie {
-    margin-top: 20px;
+    margin-top: $zise2 ;
     margin: 80px;
     text-align: center;
 }
@@ -272,18 +275,18 @@ footer a {
     text-align: center;
 
     border-radius: 50%;
-    font-size: 25px;
+    font-size:  $zise3;
 }
 .whatsapp a {
     color: $color5;
 }
 .leg {
-    margin-left: 20px;
+    margin-left: $zise2;
 }
 .largo {
     color: $color5;
     font-size: 15px;
-    margin: 20px 20px 20px 20px;
+    margin:  $zise2  $zise2  $zise2  $zise2;
 }
 /*empieza contacto*/
 
@@ -297,14 +300,14 @@ body.contacto {
 .h2-contacto {
     font-size: 60px;
 
-    margin: 20px;
+    margin: $zise2 ;
 }
 .inicio-contacto {
     background-color: $color1;
     color: $color5;
     text-decoration: none;
     padding: 10px;
-    margin: 20px;
+    margin:  $zise2;
     position: fixed;
     left: 200px;
     bottom: 70px;
@@ -313,14 +316,14 @@ body.contacto {
 .inicio-contacto:hover {
     background-color: $color2;
     color: black;
-    padding: 20px;
+    padding: $zise2 ;
 }
 .h3-contacto {
     color: bisque;
     border: 3px solid brown;
     border-radius: 5px;
     margin-top: 40px;
-    font-size: 15px;
+    font-size:  $zise1;
 }
 .contenedor {
     background-color: rgba(255, 0, 0, 0.534);
@@ -331,8 +334,8 @@ body.contacto {
         "img1 img2 img3 img3"
         "img1 img4 img5 img6"
         "img7 img4 img8 img8";
-    grid-gap: 15px;
-    padding: 20px;
+    grid-gap:  $zise1;
+    padding:  $zise2;
     border-radius: 10px;
 }
 
@@ -429,11 +432,11 @@ body.contacto {
 }
 
 .parr {
-    color: antiquewhite;
+    color: $color5;
 }
 a {
     text-decoration: none;
-    color: antiquewhite;
+    color: $color5;
 }
 
 h3 {
@@ -482,7 +485,7 @@ h3 {
 }
 .footer-ubicacion {
     height: 200px;
-    padding: 20px;
+    padding:  $zise2;
 }
 @media only screen and (min-width: 320px) and (max-width: 450px) {
     .footer-ubicacion {
@@ -505,15 +508,14 @@ h3 {
 
 .body-informacion h1 {
     border: 3px solid $color1;
-
-    padding: 20px;
-    color: rgb(24, 23, 23);
+    padding: $zise2 ;
+    color: $color6;
 }
 .inicio a {
     background-color: $color1;
     color: $color5;
     text-decoration: none;
-    padding: 20px;
+    padding:  $zise2;
     border-radius: 10px;
     position: fixed;
     right: 40px;
@@ -523,7 +525,7 @@ h3 {
 h2.info {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    padding: 20px;
+    padding:  $zise2;
     color: rgb(42, 4, 4);
     border: 2px solid rgb(42, 4, 4);
 }
@@ -533,7 +535,7 @@ h2.info {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 200px);
-    padding: 20px;
+    padding:  $zise2;
     grid-gap: 10px;
 }
 .item {
@@ -573,7 +575,7 @@ h2.info {
 }
 .anima {
     display: flex;
-    padding: 20px;
+    padding: $zise2 ;
     margin-left: 50px;
 }
 
@@ -582,10 +584,10 @@ h2.info {
     width: 100px;
     background-color: $color2;
     text-align: center;
-    font-size: 15px;
+    font-size: $zise1 ;
     line-height: 100px;
     border: 5px solid $color5;
-    font-family: sans-serif;
+    font-family: $font2;
     color: $color5;
     border-radius: 5px;
 }
@@ -683,18 +685,18 @@ h2.info {
 }
 
 p {
-    padding: 20px;
-    color: black;
+    padding: $zise2 ;
+    color: $color6;
     font-weight: 200;
 }
 
 h4 {
-    padding: 20px;
+    padding: $zise2;
 }
 footer a {
-    margin: 20px;
+    margin: $zise2 ;
     text-decoration: none;
-    padding: 20px;
+    padding: $zise2 ;
 }
 .footer-info {
     background-color: rgb(85, 126, 151);
@@ -707,8 +709,8 @@ footer a {
     background-color: $color1;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    font-size: 25px;
+    padding:  $zise2;
+    font-size:  $zise3;
 }
 .logo {
     color: $color5;
@@ -738,18 +740,18 @@ footer a {
 
 .h1-ter {
     color: rgb(61, 42, 42);
-    margin-bottom: 20px;
+    margin-bottom:  $zise2;
     text-shadow: 1px 1px 0px $color5;
     height: 50px;
 }
 .call p {
-    margin-bottom: 20px;
+    margin-bottom:  $zise2;
 }
 .call {
     background-color: rgba(255, 0, 0, 0.485);
     height: 70%;
     width: 65%;
-    padding: 20px;
+    padding:  $zise2;
     text-shadow: 2px 2px 5px $color5;
     border-radius: 8px;
 }
@@ -757,7 +759,7 @@ footer a {
 .call a {
     background-color: $color1;
     color: $color5;
-    padding: 10px 20px;
+    padding: 10px  $zise2;
     border-radius: 8px;
     text-decoration: none;
     border: 2px solid black;
@@ -771,13 +773,13 @@ footer a {
     text-align: center;
     background-color: $color1;
     font-size: 30px;
-    padding: 20px;
+    padding:  $zise2;
 }
 section {
     display: flex;
     height: 700px;
     width: 100%;
-    background-image: linear-gradient(to left, red, pink, brown);
+    background-image: linear-gradient(to left, $color1, $color2, brown);
     justify-content: space-evenly;
     align-items: center;
 }
@@ -785,7 +787,7 @@ section {
     background-color: $color2;
     height: 650px;
     width: 30%;
-    border: 2px solid black;
+    border: 2px solid $color6;
     text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 5px $color5;
@@ -817,10 +819,10 @@ section {
     color: $color2;
 }
 .card h3 {
-    font-size: 25px;
+    font-size:  $zise3;
 }
 .card p {
-    padding: 15px;
+    padding: $zise1 ;
 }
 .card .redes a {
     color: $color1;
@@ -834,9 +836,9 @@ body {
 
 .ult {
     border: 2px solid $color6;
-    padding: 20px;
+    padding:  $zise2;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 15px;
+    font-size:  $zise1;
     color: $color1;
 }
 .footer-ter {
@@ -857,10 +859,10 @@ body {
         font-size: 17px;
     }
     .logo {
-        font-size: 20px;
+        font-size:  $zise2;
     }
     .barra a {
-        margin: 20px;
+        margin:  $zise2;
     }
     h2 {
         font-size: 18px;
@@ -874,7 +876,7 @@ body {
         margin: 15px;
     }
     .card p{
-        font-size: 15px;
+        font-size:  $zise1;
     }
     .terapeutas-cards{
         height: 800px;
