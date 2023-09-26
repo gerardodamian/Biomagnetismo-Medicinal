@@ -20,7 +20,6 @@ $zise1: 15px;
 $zise2: 20px;
 $zise3: 25px;
 
-
 * {
     margin: 0;
     padding: 0;
@@ -230,7 +229,7 @@ p {
     .p {
         font-size: 4px;
     }
-    .card-home h3{
+    .card-home h3 {
         font-size: 10px;
     }
 }
@@ -260,7 +259,7 @@ footer a {
     font-size: $zise2;
 }
 .pie {
-    margin-top: $zise2 ;
+    margin-top: $zise2;
     margin: 80px;
     text-align: center;
 }
@@ -275,7 +274,7 @@ footer a {
     text-align: center;
 
     border-radius: 50%;
-    font-size:  $zise3;
+    font-size: $zise3;
 }
 .whatsapp a {
     color: $color5;
@@ -286,7 +285,7 @@ footer a {
 .largo {
     color: $color5;
     font-size: 15px;
-    margin:  $zise2  $zise2  $zise2  $zise2;
+    margin: $zise2 $zise2 $zise2 $zise2;
 }
 /*empieza contacto*/
 
@@ -300,14 +299,14 @@ body.contacto {
 .h2-contacto {
     font-size: 60px;
 
-    margin: $zise2 ;
+    margin: $zise2;
 }
 .inicio-contacto {
     background-color: $color1;
     color: $color5;
     text-decoration: none;
     padding: 10px;
-    margin:  $zise2;
+    margin: $zise2;
     position: fixed;
     left: 200px;
     bottom: 70px;
@@ -316,14 +315,14 @@ body.contacto {
 .inicio-contacto:hover {
     background-color: $color2;
     color: black;
-    padding: $zise2 ;
+    padding: $zise2;
 }
 .h3-contacto {
     color: bisque;
     border: 3px solid brown;
     border-radius: 5px;
     margin-top: 40px;
-    font-size:  $zise1;
+    font-size: $zise1;
 }
 .contenedor {
     background-color: rgba(255, 0, 0, 0.534);
@@ -334,8 +333,8 @@ body.contacto {
         "img1 img2 img3 img3"
         "img1 img4 img5 img6"
         "img7 img4 img8 img8";
-    grid-gap:  $zise1;
-    padding:  $zise2;
+    grid-gap: $zise1;
+    padding: $zise2;
     border-radius: 10px;
 }
 
@@ -485,7 +484,7 @@ h3 {
 }
 .footer-ubicacion {
     height: 200px;
-    padding:  $zise2;
+    padding: $zise2;
 }
 @media only screen and (min-width: 320px) and (max-width: 450px) {
     .footer-ubicacion {
@@ -508,14 +507,14 @@ h3 {
 
 .body-informacion h1 {
     border: 3px solid $color1;
-    padding: $zise2 ;
+    padding: $zise2;
     color: $color6;
 }
 .inicio a {
     background-color: $color1;
     color: $color5;
     text-decoration: none;
-    padding:  $zise2;
+    padding: $zise2;
     border-radius: 10px;
     position: fixed;
     right: 40px;
@@ -525,7 +524,7 @@ h3 {
 h2.info {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    padding:  $zise2;
+    padding: $zise2;
     color: rgb(42, 4, 4);
     border: 2px solid rgb(42, 4, 4);
 }
@@ -535,7 +534,7 @@ h2.info {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 200px);
-    padding:  $zise2;
+    padding: $zise2;
     grid-gap: 10px;
 }
 .item {
@@ -575,7 +574,7 @@ h2.info {
 }
 .anima {
     display: flex;
-    padding: $zise2 ;
+    padding: $zise2;
     margin-left: 50px;
 }
 
@@ -584,7 +583,7 @@ h2.info {
     width: 100px;
     background-color: $color2;
     text-align: center;
-    font-size: $zise1 ;
+    font-size: $zise1;
     line-height: 100px;
     border: 5px solid $color5;
     font-family: $font2;
@@ -632,11 +631,66 @@ h2.info {
 .c5:hover {
     transform: rotateY(180deg);
 }
+.ultimasnot{
+    border: solid $color1 3px;
+    background-color: $color2;
+    width: 600px;
+    height: 300px;
+    padding: $zise2;
+    font-size: 60px;
+    border-radius: 10px;
 
-@media only screen and (min-width: 480px) {
+}
+
+.box{
+    border:solid $color1 3px;
+    font-size: $zise3;
+    border-radius: 10px;
+}
+.box2{
+    border:solid $color1 3px;
+    font-size: $zise3;
+    border-radius: 10px;
+}
+@mixin zise($width, $height, $bgcolor, $color){
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+    color: $bgcolor
+}
+.box {
+    @include zise(643px, 300px, $color2, $color5)
+}
+.box2{
+    @include zise(643px, 300px, $color2, $color5)
+}
+
+.ultimasnot--nueva{
+    @extend .ultimasnot;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 520px) {
     .galeria {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
+    }
+    .ultimasnot{
+        width: 300px;
+        font-size: 30px;
+      }
+      .box{
+        
+        font-size: 10px;
+        
+    }
+    .box2{
+      
+        font-size: 10px;}
+      .box {
+        @include zise(343px, 200px, $color2, $color5)
+    }
+    .box2{
+        @include zise(343px, 200px, $color2, $color5)
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -685,7 +739,7 @@ h2.info {
 }
 
 p {
-    padding: $zise2 ;
+    padding: $zise2;
     color: $color6;
     font-weight: 200;
 }
@@ -694,9 +748,9 @@ h4 {
     padding: $zise2;
 }
 footer a {
-    margin: $zise2 ;
+    margin: $zise2;
     text-decoration: none;
-    padding: $zise2 ;
+    padding: $zise2;
 }
 .footer-info {
     background-color: rgb(85, 126, 151);
@@ -709,8 +763,8 @@ footer a {
     background-color: $color1;
     display: flex;
     justify-content: space-between;
-    padding:  $zise2;
-    font-size:  $zise3;
+    padding: $zise2;
+    font-size: $zise3;
 }
 .logo {
     color: $color5;
@@ -740,18 +794,18 @@ footer a {
 
 .h1-ter {
     color: rgb(61, 42, 42);
-    margin-bottom:  $zise2;
+    margin-bottom: $zise2;
     text-shadow: 1px 1px 0px $color5;
     height: 50px;
 }
 .call p {
-    margin-bottom:  $zise2;
+    margin-bottom: $zise2;
 }
 .call {
     background-color: rgba(255, 0, 0, 0.485);
     height: 70%;
     width: 65%;
-    padding:  $zise2;
+    padding: $zise2;
     text-shadow: 2px 2px 5px $color5;
     border-radius: 8px;
 }
@@ -759,7 +813,7 @@ footer a {
 .call a {
     background-color: $color1;
     color: $color5;
-    padding: 10px  $zise2;
+    padding: 10px $zise2;
     border-radius: 8px;
     text-decoration: none;
     border: 2px solid black;
@@ -773,7 +827,7 @@ footer a {
     text-align: center;
     background-color: $color1;
     font-size: 30px;
-    padding:  $zise2;
+    padding: $zise2;
 }
 section {
     display: flex;
@@ -819,10 +873,10 @@ section {
     color: $color2;
 }
 .card h3 {
-    font-size:  $zise3;
+    font-size: $zise3;
 }
 .card p {
-    padding: $zise1 ;
+    padding: $zise1;
 }
 .card .redes a {
     color: $color1;
@@ -836,9 +890,9 @@ body {
 
 .ult {
     border: 2px solid $color6;
-    padding:  $zise2;
+    padding: $zise2;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size:  $zise1;
+    font-size: $zise1;
     color: $color1;
 }
 .footer-ter {
@@ -859,10 +913,10 @@ body {
         font-size: 17px;
     }
     .logo {
-        font-size:  $zise2;
+        font-size: $zise2;
     }
     .barra a {
-        margin:  $zise2;
+        margin: $zise2;
     }
     h2 {
         font-size: 18px;
@@ -875,13 +929,15 @@ body {
         height: 800px;
         margin: 15px;
     }
-    .card p{
-        font-size:  $zise1;
+    .card p {
+        font-size: $zise1;
     }
-    .terapeutas-cards{
+    .terapeutas-cards {
         height: 800px;
     }
-    .ter{
+    .ter {
         font-size: 17px;
     }
 }
+/*empieza noticias*/
+
