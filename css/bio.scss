@@ -631,7 +631,7 @@ h2.info {
 .c5:hover {
     transform: rotateY(180deg);
 }
-.ultimasnot{
+.ultimasnot {
     border: solid $color1 3px;
     background-color: $color2;
     width: 600px;
@@ -639,33 +639,32 @@ h2.info {
     padding: $zise2;
     font-size: 60px;
     border-radius: 10px;
-
 }
 
-.box{
-    border:solid $color1 3px;
+.box {
+    border: solid $color1 3px;
     font-size: $zise3;
     border-radius: 10px;
 }
-.box2{
-    border:solid $color1 3px;
+.box2 {
+    border: solid $color1 3px;
     font-size: $zise3;
     border-radius: 10px;
 }
-@mixin zise($width, $height, $bgcolor, $color){
+@mixin zise($width, $height, $bgcolor, $color) {
     width: $width;
     height: $height;
     background-color: $bgcolor;
-    color: $bgcolor
+    color: $bgcolor;
 }
 .box {
-    @include zise(643px, 300px, $color2, $color5)
+    @include zise(643px, 300px, $color2, $color5);
 }
-.box2{
-    @include zise(643px, 300px, $color2, $color5)
+.box2 {
+    @include zise(643px, 300px, $color2, $color5);
 }
 
-.ultimasnot--nueva{
+.ultimasnot--nueva {
     @extend .ultimasnot;
 }
 
@@ -674,23 +673,21 @@ h2.info {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
     }
-    .ultimasnot{
+    .ultimasnot {
         width: 300px;
         font-size: 30px;
-      }
-      .box{
-        
+    }
+    .box {
         font-size: 10px;
-        
     }
-    .box2{
-      
-        font-size: 10px;}
-      .box {
-        @include zise(343px, 200px, $color2, $color5)
+    .box2 {
+        font-size: 10px;
     }
-    .box2{
-        @include zise(343px, 200px, $color2, $color5)
+    .box {
+        @include zise(343px, 200px, $color2, $color5);
+    }
+    .box2 {
+        @include zise(343px, 200px, $color2, $color5);
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -940,4 +937,3 @@ body {
     }
 }
 /*empieza noticias*/
-
