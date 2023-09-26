@@ -640,6 +640,9 @@ h2.info {
     font-size: 60px;
     border-radius: 10px;
 }
+.ultimasnot--nueva {
+    @extend .ultimasnot;
+}
 
 .box {
     border: solid $color1 3px;
@@ -664,9 +667,7 @@ h2.info {
     @include zise(643px, 300px, $color2, $color5);
 }
 
-.ultimasnot--nueva {
-    @extend .ultimasnot;
-}
+
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
     .galeria {
