@@ -1,0 +1,940 @@
+@font-face {
+    font-family: booter;
+    src: url(font/BOOTERFF.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2? family= Caprasimo & family= Handjet:wght@300 & display=swap");
+
+/*font-family: 'Caprasimo', cursive;
+  font-family: 'Handjet', cursive;
+  */
+$color1: red;
+$color2: pink;
+$color3: green;
+$color4: rgba(63, 53, 58, 0.538);
+$color5: white;
+$color6: black;
+$font1: booter;
+$font2: Verdana, Geneva, Tahoma, sans-serif;
+$zise1: 15px;
+$zise2: 20px;
+$zise3: 25px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: $color4;
+    height: 80px;
+    width: 90%;
+    font-weight: 300;
+    font-family: $font1;
+    font-size: $zise1;
+    padding: 30px;
+}
+h1 {
+    background-color: $color1;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    color: $color1;
+}
+.logo span {
+    color: black;
+}
+.barra {
+    float: right;
+}
+.barra ul li {
+    list-style: none;
+    display: inline-block;
+}
+.barra a {
+    color: $color1;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px $color5;
+}
+.barra a:hover {
+    color: $color5;
+}
+.cartel {
+    font-style: normal;
+}
+.body-home {
+    background-image: url(../pages/multimedia/biomagnetismo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    width: 100%;
+}
+.main-home {
+    height: 300px;
+    width: 100%;
+    background-color: $color4;
+    background-image: url(../pages/multimedia/biomagnetismo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-home {
+    display: flex;
+    background-color: $color1;
+    justify-content: space-between;
+    padding: $zise2;
+}
+.card-home {
+    width: 30%;
+    background-color: $color4;
+    border: 7px solid $color1;
+}
+
+.card__img {
+    height: 200px;
+    background-image: url(../pages/multimedia/card1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.card__img2 {
+    height: 200px;
+    background-image: url(../pages/multimedia/card2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.card__img3 {
+    height: 200px;
+    background-image: url(../pages/multimedia/card3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card__title {
+    text-align: center;
+    color: $color1;
+    font-size: $zise3;
+    font-family: $font2;
+}
+.card__desc {
+    padding: 20px;
+    color: $color5;
+}
+.card__boton {
+    background-color: $color1;
+    text-decoration: none;
+    color: $color5;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: $zise2 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card__boton:hover {
+    background-color: rgb(159, 63, 63);
+    color: $color4;
+}
+.card__img4 {
+    height: 200px;
+    height: 400px;
+    background-image: url(../pages/multimedia/card4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card__desc--align {
+    text-align: center;
+    font-size: 30px;
+}
+.card-home--xl {
+    width: 100%;
+}
+.card__boton--size {
+    width: 50%;
+}
+.card__img5 {
+    height: 200px;
+    background-image: url(../pages/multimedia/card5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card__img6 {
+    height: 200px;
+    background-image: url(../pages/multimedia/card6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-home--lg {
+    width: 50%;
+    margin: 10px;
+}
+
+audio {
+    padding: $zise2;
+}
+.call-home {
+    color: $color5;
+    width: 70%;
+    background-color: rgba(156, 59, 59, 0.679);
+    border: 4px solid black;
+    padding: $zise2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: right;
+    margin: 30px;
+}
+p.cartel {
+    margin-bottom: $zise2;
+}
+.h2-home {
+    color: $color1;
+    margin-bottom: 20px;
+}
+.p-home {
+    border: 3px solid black;
+    padding: $zise2;
+    font-family: "Times New Roman", Times, serif;
+    color: $color5;
+}
+
+.parr a {
+    text-decoration: none;
+    color: $color1;
+}
+.call-home a {
+    background-color: $color1;
+    color: $color5;
+    text-decoration: none;
+    padding: 10px $zise2;
+}
+.call-home a:hover {
+    background-color: maroon;
+}
+p {
+    color: $color2;
+}
+.footer-home {
+    height: 200px;
+    background-color: $color1;
+}
+@media only screen and (min-width: 320px) and (max-widht: 488px) {
+    body {
+        width: 60%;
+        height: 1200px;
+        padding: $zise2;
+    }
+    h1 {
+        width: 120%;
+        font-size: 40px;
+    }
+    .p {
+        font-size: 4px;
+    }
+    .card-home h3 {
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1150px) {
+    body {
+        width: 100%;
+        .barra a {
+            font-size: $zise2;
+        }
+    }
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer {
+    background-color: brown;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: $zise2;
+}
+.pie {
+    margin-top: $zise2;
+    margin: 80px;
+    text-align: center;
+}
+.whatsapp {
+    height: 30px;
+
+    background-color: $color3;
+    color: $color5;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+
+    border-radius: 50%;
+    font-size: $zise3;
+}
+.whatsapp a {
+    color: $color5;
+}
+.leg {
+    margin-left: $zise2;
+}
+.largo {
+    color: $color5;
+    font-size: 15px;
+    margin: $zise2 $zise2 $zise2 $zise2;
+}
+/*empieza contacto*/
+
+body.contacto {
+    height: 100vp;
+    width: 100%;
+    background-image: url(../pages/multimedia/biomagnetismo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.h2-contacto {
+    font-size: 60px;
+
+    margin: $zise2;
+}
+.inicio-contacto {
+    background-color: $color1;
+    color: $color5;
+    text-decoration: none;
+    padding: 10px;
+    margin: $zise2;
+    position: fixed;
+    left: 200px;
+    bottom: 70px;
+}
+
+.inicio-contacto:hover {
+    background-color: $color2;
+    color: black;
+    padding: $zise2;
+}
+.h3-contacto {
+    color: bisque;
+    border: 3px solid brown;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: $zise1;
+}
+.contenedor {
+    background-color: rgba(255, 0, 0, 0.534);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:
+        "img1 img2 img3 img3"
+        "img1 img4 img5 img6"
+        "img7 img4 img8 img8";
+    grid-gap: $zise1;
+    padding: $zise2;
+    border-radius: 10px;
+}
+
+.item1 {
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 0.9s;
+    border: 2px solid black;
+}
+.item1:hover {
+    transform: scale(1.09);
+}
+.item1 {
+    background-image: url(../pages/multimedia/contacto1.jpg);
+    grid-area: img1;
+}
+.item2 {
+    background-image: url(../pages/multimedia/contacto2.jpg);
+    grid-area: img2;
+}
+.item3 {
+    background-image: url(../pages/multimedia/contacto3.jpg);
+    grid-area: img3;
+}
+.item4 {
+    background-image: url(../pages/multimedia/contacto4.jpg);
+    grid-area: img4;
+}
+.item5 {
+    background-image: url(../pages/multimedia/contacto5.jpg);
+    grid-area: img5;
+}
+.item6 {
+    background-image: url(../pages/multimedia/contacto6.jpg);
+    grid-area: img6;
+}
+.item7 {
+    background-image: url(../pages/multimedia/contacto7.jpg);
+    grid-area: img7;
+}
+.item8 {
+    background-image: url(../pages/multimedia/contacto8.jpg);
+    grid-area: img8;
+}
+.parr {
+    color: $color6;
+}
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    header .contacto {
+        width: 200px;
+    }
+    .body-contacto {
+        width: 400px;
+    }
+    .h2-contacto {
+        color: black;
+        margin: 2px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+            "img8";
+    }
+}
+@media only screen and (min-width: px) and (max-width: 1023px) {
+    .h2-contacto {
+        font-size: 40px;
+    }
+    header.contacto {
+        width: 900px;
+    }
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+
+.parr {
+    color: $color5;
+}
+a {
+    text-decoration: none;
+    color: $color5;
+}
+
+h3 {
+    text-align: center;
+}
+
+.pie {
+    color: $color5;
+    text-align: center;
+}
+.formulario {
+    padding-left: 30px;
+}
+/*empieza Ubicacion*/
+
+.nav-item:hover {
+    background-color: #333;
+    border-radius: 10px;
+}
+.collapse {
+    display: flex;
+    justify-content: end;
+}
+.jumbotron {
+    background-image: url(../pages/multimedia/consultorio.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nav-link {
+    color: $color5 !important;
+}
+.ubic {
+    color: $color5;
+}
+.ubicacion {
+    height: 50px;
+    text-align: center;
+    border: 2px solid rgb(49, 5, 5);
+    margin-bottom: 0;
+}
+.nleft {
+    height: 400px;
+    background-image: url(../pages/multimedia/con2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.footer-ubicacion {
+    height: 200px;
+    padding: $zise2;
+}
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+    .footer-ubicacion {
+        height: 400px;
+    }
+}
+
+/*empieza informacion*/
+
+.body-informacion {
+    background-image: linear-gradient(
+        to left,
+        rgb(205, 98, 115),
+        rgb(192, 255, 216),
+        rgb(85, 85, 217)
+    );
+    background-position: center;
+    background-size: cover;
+}
+
+.body-informacion h1 {
+    border: 3px solid $color1;
+    padding: $zise2;
+    color: $color6;
+}
+.inicio a {
+    background-color: $color1;
+    color: $color5;
+    text-decoration: none;
+    padding: $zise2;
+    border-radius: 10px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+h2.info {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding: $zise2;
+    color: rgb(42, 4, 4);
+    border: 2px solid rgb(42, 4, 4);
+}
+.galeria {
+    width: 100%;
+    background-color: rgb(54, 123, 131);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    padding: $zise2;
+    grid-gap: 10px;
+}
+.item {
+    background-position: center;
+    background-size: cover;
+    border: 2px solid blue;
+    border-radius: 10px;
+    transition: all 0.9s;
+}
+.item:hover {
+    transform: scale(1.09);
+}
+
+.item9 {
+    background-image: url(../pages/multimedia/info1.jpg);
+}
+.item10 {
+    background-image: url(../pages/multimedia/info2.jpg);
+}
+.item11 {
+    background-image: url(../pages/multimedia/info3.jpg);
+}
+.item12 {
+    background-image: url(../pages/multimedia/info4.jpg);
+}
+.item13 {
+    background-image: url(../pages/multimedia/info5.jpg);
+}
+.item14 {
+    background-image: url(../pages/multimedia/info6.jpg);
+}
+.item15 {
+    background-image: url(../pages/multimedia/info7.jpg);
+}
+.item16 {
+    background-image: url(../pages/multimedia/info8.jpg);
+}
+.anima {
+    display: flex;
+    padding: $zise2;
+    margin-left: 50px;
+}
+
+.animacion {
+    height: 100px;
+    width: 100px;
+    background-color: $color2;
+    text-align: center;
+    font-size: $zise1;
+    line-height: 100px;
+    border: 5px solid $color5;
+    font-family: $font2;
+    color: $color5;
+    border-radius: 5px;
+}
+
+.c1 {
+    background-color: $color1;
+    transform: rotateY(0deg);
+    transition: all 2s;
+}
+.c1:hover {
+    transform: rotateY(180deg);
+}
+.c2 {
+    background-color: $color1;
+    transform: rotateY(0deg);
+    transition: all 2s;
+}
+.c2:hover {
+    transform: rotateY(180deg);
+}
+.c3 {
+    background-color: $color1;
+    transform: rotateY(0deg);
+    transition: all 2s;
+}
+.c3:hover {
+    transform: rotateY(180deg);
+}
+.c4 {
+    background-color: $color1;
+    transform: rotateY(0deg);
+    transition: all 2s;
+}
+.c4:hover {
+    transform: rotateY(180deg);
+}
+.c5 {
+    background-color: $color1;
+    transform: rotateY(0deg);
+    transition: all 2s;
+}
+.c5:hover {
+    transform: rotateY(180deg);
+}
+.ultimasnot {
+    border: solid $color1 3px;
+    background-color: $color2;
+    width: 600px;
+    height: 300px;
+    padding: $zise2;
+    font-size: 60px;
+    border-radius: 10px;
+}
+.ultimasnot--nueva {
+    @extend .ultimasnot;
+}
+
+.box {
+    border: solid $color1 3px;
+    font-size: $zise3;
+    border-radius: 10px;
+}
+.box2 {
+    border: solid $color1 3px;
+    font-size: $zise3;
+    border-radius: 10px;
+}
+@mixin zise($width, $height, $bgcolor, $color) {
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+    color: $bgcolor;
+}
+.box {
+    @include zise(643px, 300px, $color2, $color5);
+}
+.box2 {
+    @include zise(643px, 300px, $color2, $color5);
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+    .ultimasnot {
+        width: 300px;
+        font-size: 30px;
+    }
+    .box {
+        font-size: 10px;
+    }
+    .box2 {
+        font-size: 10px;
+    }
+    .box {
+        @include zise(343px, 200px, $color2, $color5);
+    }
+    .box2 {
+        @include zise(343px, 200px, $color2, $color5);
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .item2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .item3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .item5 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .item6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .item7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .item8 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+}
+
+p {
+    padding: $zise2;
+    color: $color6;
+    font-weight: 200;
+}
+
+h4 {
+    padding: $zise2;
+}
+footer a {
+    margin: $zise2;
+    text-decoration: none;
+    padding: $zise2;
+}
+.footer-info {
+    background-color: rgb(85, 126, 151);
+}
+
+/*empieza terapeutas */
+
+.header-ter {
+    height: 80px;
+    background-color: $color1;
+    display: flex;
+    justify-content: space-between;
+    padding: $zise2;
+    font-size: $zise3;
+}
+.logo {
+    color: $color5;
+    font-family: "Barriecito";
+    font-weight: bold;
+    font-size: 40px;
+}
+.barra-ter ul li {
+    list-style: none;
+    display: inline-block;
+}
+.barra-ter a {
+    text-decoration: none;
+    color: $color2;
+}
+.barra-ter a:hover {
+    color: rgb(53, 1, 1);
+}
+.main-ter {
+    height: calc(100vh - 80px);
+    background-image: url(../pages/multimedia/fondoter.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.h1-ter {
+    color: rgb(61, 42, 42);
+    margin-bottom: $zise2;
+    text-shadow: 1px 1px 0px $color5;
+    height: 50px;
+}
+.call p {
+    margin-bottom: $zise2;
+}
+.call {
+    background-color: rgba(255, 0, 0, 0.485);
+    height: 70%;
+    width: 65%;
+    padding: $zise2;
+    text-shadow: 2px 2px 5px $color5;
+    border-radius: 8px;
+}
+
+.call a {
+    background-color: $color1;
+    color: $color5;
+    padding: 10px $zise2;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid black;
+}
+.call a:hover {
+    color: $color4;
+    border: 2px solid $color5;
+    background-color: $color2;
+}
+.ter {
+    text-align: center;
+    background-color: $color1;
+    font-size: 30px;
+    padding: $zise2;
+}
+section {
+    display: flex;
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(to left, $color1, $color2, brown);
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card {
+    background-color: $color2;
+    height: 650px;
+    width: 30%;
+    border: 2px solid $color6;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px $color5;
+    transform: rotateY(0deg);
+    transition: all 3s;
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-img {
+    height: 200px;
+    width: 100%;
+    background-image: url(../pages/multimedia/mujer.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.card1-img {
+    height: 200px;
+    width: 100%;
+    background-image: url(../pages/multimedia/hombre.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px, 0px, 10px, 10px;
+}
+
+.card h2 {
+    color: $color2;
+}
+.card h3 {
+    font-size: $zise3;
+}
+.card p {
+    padding: $zise1;
+}
+.card .redes a {
+    color: $color1;
+    font-size: 35px;
+    letter-spacing: 13px;
+}
+
+body {
+    background-color: $color2;
+}
+
+.ult {
+    border: 2px solid $color6;
+    padding: $zise2;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: $zise1;
+    color: $color1;
+}
+.footer-ter {
+    background-color: brown;
+
+    text-align: center;
+}
+.footer-ter a {
+    text-decoration: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 580px) {
+    .call {
+        height: 100%;
+    }
+
+    header {
+        height: 100px;
+        font-size: 17px;
+    }
+    .logo {
+        font-size: $zise2;
+    }
+    .barra a {
+        margin: $zise2;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 5px;
+    }
+    .card {
+        width: 35%;
+        height: 800px;
+        margin: 15px;
+    }
+    .card p {
+        font-size: $zise1;
+    }
+    .terapeutas-cards {
+        height: 800px;
+    }
+    .ter {
+        font-size: 17px;
+    }
+}
+/*empieza noticias*/
