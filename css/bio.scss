@@ -658,13 +658,13 @@ h2.info {
     width: $width;
     height: $height;
     background-color: $bgcolor;
-    color: $bgcolor;
+    color: $color;
 }
 .box {
-    @include zise(643px, 300px, $color2, $color5);
+    @include zise(643px, 300px, $color2, $color4);
 }
 .box2 {
-    @include zise(643px, 300px, $color2, $color5);
+    @include zise(643px, 300px, $color2, $color4);
 }
 
 .flor{

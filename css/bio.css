@@ -706,14 +706,14 @@ h2.info {
   width: 643px;
   height: 300px;
   background-color: pink;
-  color: pink;
+  color: rgba(63, 53, 58, 0.538);
 }
 
 .box2 {
   width: 643px;
   height: 300px;
   background-color: pink;
-  color: pink;
+  color: rgba(63, 53, 58, 0.538);
 }
 
 .flor {
@@ -787,13 +787,13 @@ h2.info {
     width: 343px;
     height: 200px;
     background-color: pink;
-    color: pink;
+    color: white;
   }
   .box2 {
     width: 343px;
     height: 200px;
     background-color: pink;
-    color: pink;
+    color: white;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
