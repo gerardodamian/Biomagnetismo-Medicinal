@@ -768,6 +768,11 @@ h2.info {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
   }
+  .animacion {
+    width: 100px;
+    height: 100px;
+    font-size: 8px;
+  }
   .ultimasnot, .ultimasnot--nueva {
     width: 300px;
     font-size: 30px;
