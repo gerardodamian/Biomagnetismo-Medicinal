@@ -752,7 +752,7 @@ h2.info {
 }
 
 .flor1-icon:hover {
-  filter: grayscale(1%);
+  filter: grayscale(0%);
 }
 
 .flor2-icon:hover {
