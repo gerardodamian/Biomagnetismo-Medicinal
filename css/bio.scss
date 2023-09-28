@@ -667,7 +667,52 @@ h2.info {
     @include zise(643px, 300px, $color2, $color5);
 }
 
+.flor{
+    font-size: 50px;
+    text-align: center;
+    color: $color1;
+}
 
+.flor1-icon,
+.flor2-icon,
+.flor3-icon {
+    height: 350px;
+    width: 100%;
+    border: 2px solid #333;
+}
+
+.flor1-icon {
+    background-image: url("../pages/multimedia/flor1.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.flor2-icon {
+    background-image: url("../pages/multimedia/flores2.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.flor3-icon {
+    background-image: url("../pages/multimedia/flore3.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.flor1-icon:hover {
+    filter: grayscale(0%);
+}
+
+.flor2-icon:hover {
+    filter: grayscale(0%);
+}
+
+.flor3-icon:hover {
+    filter: grayscale(0%);
+}
 
 @media only screen and (min-width: 320px) and (max-width: 520px) {
     .galeria {
