@@ -27,7 +27,7 @@ $zise3: 25px;
 header {
     background-color: $color4;
     height: 80px;
-    width: 90%;
+
     font-weight: 300;
     font-family: $font1;
     font-size: $zise1;
@@ -36,7 +36,7 @@ header {
 h1 {
     background-color: $color1;
     text-align: center;
-    width: 100%;
+   
 }
 
 .logo {
@@ -73,7 +73,7 @@ h1 {
 }
 .main-home {
     height: 300px;
-    width: 100%;
+
     background-color: $color4;
     background-image: url(../pages/multimedia/biomagnetismo.jpg);
     background-size: cover;
@@ -529,7 +529,7 @@ h2.info {
     border: 2px solid rgb(42, 4, 4);
 }
 .galeria {
-    width: 100%;
+   
     background-color: rgb(54, 123, 131);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -667,7 +667,7 @@ h2.info {
     @include zise(643px, 300px, $color2, $color4);
 }
 
-.flor{
+.flor {
     font-size: 50px;
     text-align: center;
     color: $color1;
@@ -719,7 +719,7 @@ h2.info {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
     }
-    .animacion{
+    .animacion {
         width: 100px;
         height: 100px;
         font-size: 8px;
@@ -880,7 +880,6 @@ footer a {
 section {
     display: flex;
     height: 700px;
-    width: 100%;
     background-image: linear-gradient(to left, $color1, $color2, brown);
     justify-content: space-evenly;
     align-items: center;

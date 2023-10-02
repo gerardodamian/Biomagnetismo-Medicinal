@@ -14,7 +14,6 @@
 header {
   background-color: rgba(63, 53, 58, 0.538);
   height: 80px;
-  width: 90%;
   font-weight: 300;
   font-family: booter;
   font-size: 15px;
@@ -24,7 +23,6 @@ header {
 h1 {
   background-color: red;
   text-align: center;
-  width: 100%;
 }
 
 .logo {
@@ -69,7 +67,6 @@ h1 {
 
 .main-home {
   height: 300px;
-  width: 100%;
   background-color: rgba(63, 53, 58, 0.538);
   background-image: url(../pages/multimedia/biomagnetismo.jpg);
   background-size: cover;
@@ -558,7 +555,6 @@ h2.info {
 }
 
 .galeria {
-  width: 100%;
   background-color: rgb(54, 123, 131);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -944,7 +940,6 @@ footer a {
 section {
   display: flex;
   height: 700px;
-  width: 100%;
   background-image: linear-gradient(to left, red, pink, brown);
   justify-content: space-evenly;
   align-items: center;
