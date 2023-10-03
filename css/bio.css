@@ -523,16 +523,11 @@ h3 {
   }
 }
 /*empieza informacion*/
-.body-informacion {
+.body {
   background-image: linear-gradient(to left, rgb(205, 98, 115), rgb(192, 255, 216), rgb(85, 85, 217));
   background-position: center;
   background-size: cover;
-}
-
-.body-informacion h1 {
-  border: 3px solid red;
-  padding: 20px;
-  color: black;
+  width: 100vw;
 }
 
 .inicio a {
@@ -759,10 +754,13 @@ h2.info {
   filter: grayscale(0%);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 520px) {
+@media only screen and (min-width: 320px) and (max-width: 655px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
+  }
+  .body-informacion {
+    width: 100vw;
   }
   .animacion {
     width: 100px;

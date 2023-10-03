@@ -23,6 +23,8 @@ $zise3: 25px;
 * {
     margin: 0;
     padding: 0;
+    
+   
 }
 header {
     background-color: $color4;
@@ -494,7 +496,7 @@ h3 {
 
 /*empieza informacion*/
 
-.body-informacion {
+.body {
     background-image: linear-gradient(
         to left,
         rgb(205, 98, 115),
@@ -503,13 +505,10 @@ h3 {
     );
     background-position: center;
     background-size: cover;
+    width: 100vw;
 }
 
-.body-informacion h1 {
-    border: 3px solid $color1;
-    padding: $zise2;
-    color: $color6;
-}
+
 .inicio a {
     background-color: $color1;
     color: $color5;
@@ -714,10 +713,14 @@ h2.info {
     filter: grayscale(0%);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 520px) {
+@media only screen and (min-width: 320px) and (max-width: 655px) {
     .galeria {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
+    }
+    .body-informacion {
+       
+        width: 100vw;
     }
     .animacion {
         width: 100px;
