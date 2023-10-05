@@ -23,8 +23,7 @@ $zise3: 25px;
 * {
     margin: 0;
     padding: 0;
-    
-   
+    box-sizing: border-box;
 }
 header {
     background-color: $color4;
@@ -38,9 +37,8 @@ header {
 h1 {
     background-color: $color1;
     text-align: center;
-   
 }
-.cartel marquee{
+.cartel marquee {
     color: white;
     padding: 40px;
     margin-top: 30px;
@@ -61,8 +59,6 @@ h1 {
     background-image: url(../multimedia/biomagnetismo.jpg);
     background-size: cover;
     background-position: center;
-    height: 1000px;
-    width: 100%;
 }
 .main-home {
     height: 300px;
@@ -114,38 +110,42 @@ audio {
 p {
     color: $color2;
 }
-.foto-1{
+.foto-1 {
     padding: 15px;
     margin-left: 15px;
     margin-right: 15px;
 }
-.foto-2{
+.foto-2 {
     padding: 15px;
     margin-left: 15px;
     margin-right: 15px;
 }
 .footer-home {
-   
     background-color: $color1;
 }
 @media only screen and (min-width: 320px) and (max-widht: 488px) {
-   
-    h1 {
-        width: 120%;
-        font-size: 40px;
+    .body-home{
+        width: 200px;
     }
+    
     .p {
         font-size: 4px;
     }
-    .card-home h3 {
-        font-size: 10px;
-    }
+   
 }
 @media only screen and (min-width: 768px) {
-    
+    .cont{
+        width: 1200px;
+
+    }
+    .conta{
+        width: 1200px;
+    }
+    .body-home{
+    width: 1200px;
+    }
 }
 @media only screen and (min-width: 1150px) {
-   
 }
 
 p {
@@ -194,10 +194,10 @@ footer a {
 }
 /*empieza contacto*/
 
-body.contacto {
+body.body-contacto {
     height: 100vp;
-    width: 100%;
-    background-image: url(../multimedia/biomagnetismo.jpg);
+
+    background-image: url(../multimedia/fondo-contaco.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -206,29 +206,8 @@ body.contacto {
 
     margin: $zise2;
 }
-.inicio-contacto {
-    background-color: $color1;
-    color: $color5;
-    text-decoration: none;
-    padding: 10px;
-    margin: $zise2;
-    position: fixed;
-    left: 200px;
-    bottom: 70px;
-}
 
-.inicio-contacto:hover {
-    background-color: $color2;
-    color: black;
-    padding: $zise2;
-}
-.h3-contacto {
-    color: $color6;
-    border: 3px solid brown;
-    border-radius: 5px;
-    margin-top: 40px;
-    font-size: $zise1;
-}
+
 .contenedor {
     background-color: rgba(255, 0, 0, 0.534);
     display: grid;
@@ -288,17 +267,9 @@ body.contacto {
 .parr-cont {
     color: $color6;
 }
-@media only screen and (min-width: 320px) and (max-width: 520px) {
-    header .contacto {
-        width: 150px;
-    }
-    .body-contacto {
-        width: 320px;
-    }
-   
-
+@media only screen and (min-width: 250px) and (max-width: 520px) {
     .contenedor {
-        grid-template-columns: 1fr;
+        grid-template-columns: 500px;
         grid-template-rows: repeat(8, 200px);
         grid-template-areas:
             "img1"
@@ -310,12 +281,16 @@ body.contacto {
             "img7"
             "img8";
     }
-}
-@media only screen and (min-width: px) and (max-width: 1023px) {
-    
-    header.contacto {
-        width: 900px;
+   .cont{
+    width: 450px;}
+    .turno {
+        width: 300px;
     }
+    .conta{
+        width: 450px;
+    }
+}
+@media only screen and (min-width: 521px) and (max-width: 1023px) {
     .contenedor {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 200px);
@@ -344,9 +319,59 @@ h3 {
     color: $color5;
     text-align: center;
 }
-.formulario {
-    padding-left: 30px;
+
+.turno {
+    width: 500px;
+    background-color: $color1;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: calibri;
+    color: $color5;
+    box-shadow: 7px 13px 37px #000;
 }
+.turno h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.controls {
+    width: 100%;
+    background: rgb(200, 81, 81);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid $color6;
+    font-family: calibri;
+    font-size: 18px;
+}
+.turno p {
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+}
+.turno a {
+    color: $color5;
+    text-decoration: none;
+}
+.turno a:hover {
+    color: $color5;
+    text-decoration: underline;
+}
+.turno .button {
+    width: 100%;
+    background: rgb(200, 81, 81);
+    border: none;
+    padding: 12px;
+    color: $color5;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.turno .button:hover {
+    background: rgb(31, 28, 28);
+}
+
 /*empieza Ubicacion*/
 
 .nav-item:hover {
@@ -392,22 +417,15 @@ h3 {
 
 /*empieza informacion*/
 
-.body {
-    background-image: linear-gradient(
-        to left,
-        $color1,
-        $color2,
-        $color1
-    );
+.body-info {
+    background-image: linear-gradient(to left, $color1, $color2, $color1);
     background-position: center;
-    background-size: cover;
-    width: 100vw;
+
     padding: 30px;
 }
-header{
+header {
     height: 200px;
 }
-
 
 .inicio a {
     background-color: $color1;
@@ -428,7 +446,6 @@ h2.info {
     border: 2px solid rgb(42, 4, 4);
 }
 .galeria {
-   
     background-color: $color2;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -477,19 +494,6 @@ h2.info {
     margin-left: 50px;
 }
 
-.animacion {
-    height: 100px;
-    width: 100px;
-    background-color: $color2;
-    text-align: center;
-    font-size: $zise1;
-    line-height: 100px;
-    border: 5px solid $color5;
-    font-family: $font2;
-    color: $color5;
-    border-radius: 5px;
-}
-
 .c1 {
     background-color: $color1;
     transform: rotateY(0deg);
@@ -531,8 +535,6 @@ h2.info {
     transform: rotateY(180deg);
 }
 
-
-
 .box {
     border: solid $color1 3px;
     font-size: $zise3;
@@ -556,15 +558,12 @@ h2.info {
     @include zise(643px, 300px, $color2, $color4);
 }
 
-
 @media only screen and (min-width: 320px) and (max-width: 655px) {
     .galeria {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
     }
-   
-    
-    
+
     .box {
         font-size: 16px;
     }
@@ -579,7 +578,7 @@ h2.info {
         @include zise(320px, 290px, $color2, $color5);
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 656px) and (max-width: 1023px) {
     .galeria {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -630,41 +629,25 @@ p {
     font-weight: 200;
 }
 
-
-
 .footer-info {
     background-color: $color2;
 
     a {
         margin: $zise2;
         text-decoration: none;
-        padding: $zise2;  
-
+        padding: $zise2;
     }
 }
 
 /*empieza terapeutas */
 
-.header{
-    padding-top: 30px;
-}
 .logo {
     color: $color5;
     font-family: "Barriecito";
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
 }
-.barra-ter ul li {
-    list-style: none;
-    display: inline-block;
-}
-.barra-ter a {
-    text-decoration: none;
-    color: $color2;
-}
-.barra-ter a:hover {
-    color: rgb(53, 1, 1);
-}
+
 .main-ter {
     height: calc(100vh - 80px);
     background-image: url(../multimedia/fondoter.jpg);
@@ -685,7 +668,7 @@ p {
 }
 .call {
     background-color: rgba(255, 0, 0, 0.485);
-    height: 70%;
+    height: 80%;
     width: 65%;
     padding: $zise2;
     text-shadow: 2px 2px 5px $color5;
@@ -785,11 +768,16 @@ body {
     text-decoration: none;
 }
 @media only screen and (min-width: 320px) and (max-width: 780px) {
-  
-
     header {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
+    .call {
+        height: 120%;
+    }
+    .main-ter {
+        height: 100vh;
+    }
+
     .logo {
         font-size: $zise2;
     }
@@ -800,7 +788,7 @@ body {
         font-size: 18px;
     }
     h3 {
-        font-size: 5px;
+        font-size: 16px;
     }
     .card {
         width: 35%;
