@@ -40,6 +40,11 @@ h1 {
     text-align: center;
    
 }
+.cartel marquee{
+    color: white;
+    padding: 40px;
+    margin-top: 30px;
+}
 
 .logo {
     float: left;
@@ -48,21 +53,7 @@ h1 {
 .logo span {
     color: black;
 }
-.barra {
-    float: right;
-}
-.barra ul li {
-    list-style: none;
-    display: inline-block;
-}
-.barra a {
-    color: $color1;
-    text-decoration: none;
-    text-shadow: 1px 1px 2px $color5;
-}
-.barra a:hover {
-    color: $color5;
-}
+
 .cartel {
     font-style: normal;
 }
@@ -81,95 +72,6 @@ h1 {
     background-size: cover;
     background-position: center;
 }
-.section-home {
-    display: flex;
-    background-color: $color1;
-    justify-content: space-between;
-    padding: $zise2;
-}
-.card-home {
-    width: 30%;
-    background-color: $color4;
-    border: 7px solid $color1;
-}
-
-.card__img {
-    height: 200px;
-    background-image: url(../multimedia/card1.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-.card__img2 {
-    height: 200px;
-    background-image: url(../multimedia/card2.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-.card__img3 {
-    height: 200px;
-    background-image: url(../multimedia/card3.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-.card__title {
-    text-align: center;
-    color: $color1;
-    font-size: $zise3;
-    font-family: $font2;
-}
-.card__desc {
-    padding: 20px;
-    color: $color5;
-}
-.card__boton {
-    background-color: $color1;
-    text-decoration: none;
-    color: $color5;
-    padding: 10px 20px;
-    display: block;
-    text-align: center;
-    width: 60%;
-    margin: $zise2 auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.card__boton:hover {
-    background-color: rgb(159, 63, 63);
-    color: $color4;
-}
-.card__img4 {
-    height: 200px;
-    height: 400px;
-    background-image: url(../multimedia/card4.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.card__desc--align {
-    text-align: center;
-    font-size: 30px;
-}
-.card-home--xl {
-    width: 100%;
-}
-.card__boton--size {
-    width: 50%;
-}
-.card__img5 {
-    height: 200px;
-    background-image: url(../multimedia/card5.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.card__img6 {
-    height: 200px;
-    background-image: url(../multimedia/card6.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.card-home--lg {
-    width: 50%;
-    margin: 10px;
-}
 
 audio {
     padding: $zise2;
@@ -184,9 +86,7 @@ audio {
     float: right;
     margin: 30px;
 }
-p.cartel {
-    margin-bottom: $zise2;
-}
+
 .h2-home {
     color: $color1;
     margin-bottom: 20px;
@@ -214,13 +114,23 @@ p.cartel {
 p {
     color: $color2;
 }
+.foto-1{
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.foto-2{
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 .footer-home {
     height: 200px;
     background-color: $color1;
 }
 @media only screen and (min-width: 320px) and (max-widht: 488px) {
     body {
-        width: 60%;
+        
         height: 1200px;
         padding: $zise2;
     }
@@ -274,15 +184,19 @@ footer a {
     right: 30px;
     bottom: 30px;
     text-align: center;
-
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     font-size: $zise3;
 }
 .whatsapp a {
     color: $color5;
 }
-.leg {
+.leg a {
     margin-left: $zise2;
+    color: black;
 }
 .largo {
     color: $color5;
@@ -320,7 +234,7 @@ body.contacto {
     padding: $zise2;
 }
 .h3-contacto {
-    color: bisque;
+    color: $color6;
     border: 3px solid brown;
     border-radius: 5px;
     margin-top: 40px;
@@ -382,7 +296,7 @@ body.contacto {
     background-image: url(../multimedia/contacto8.jpg);
     grid-area: img8;
 }
-.parr {
+.parr-cont {
     color: $color6;
 }
 @media only screen and (min-width: 320px) and (max-width: 520px) {
@@ -499,9 +413,9 @@ h3 {
 .body {
     background-image: linear-gradient(
         to left,
-        rgb(205, 98, 115),
-        rgb(192, 255, 216),
-        rgb(85, 85, 217)
+        $color1,
+        $color2,
+        $color1
     );
     background-position: center;
     background-size: cover;
@@ -529,7 +443,7 @@ h2.info {
 }
 .galeria {
    
-    background-color: rgb(54, 123, 131);
+    background-color: $color2;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 200px);
@@ -630,18 +544,8 @@ h2.info {
 .c5:hover {
     transform: rotateY(180deg);
 }
-.ultimasnot {
-    border: solid $color1 3px;
-    background-color: $color2;
-    width: 600px;
-    height: 300px;
-    padding: $zise2;
-    font-size: 60px;
-    border-radius: 10px;
-}
-.ultimasnot--nueva {
-    @extend .ultimasnot;
-}
+
+
 
 .box {
     border: solid $color1 3px;
@@ -666,52 +570,6 @@ h2.info {
     @include zise(643px, 300px, $color2, $color4);
 }
 
-.flor {
-    font-size: 50px;
-    text-align: center;
-    color: $color1;
-}
-
-.flor1-icon,
-.flor2-icon,
-.flor3-icon {
-    height: 350px;
-    width: 100%;
-    border: 2px solid #333;
-}
-
-.flor1-icon {
-    background-image: url("../multimedia/flor1.jpeg");
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-}
-
-.flor2-icon {
-    background-image: url("../multimedia/flores2.jpeg");
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-}
-
-.flor3-icon {
-    background-image: url("../multimedia/flore3.jpeg");
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-}
-
-.flor1-icon:hover {
-    filter: grayscale(0%);
-}
-
-.flor2-icon:hover {
-    filter: grayscale(0%);
-}
-
-.flor3-icon:hover {
-    filter: grayscale(0%);
-}
 
 @media only screen and (min-width: 320px) and (max-width: 655px) {
     .galeria {
@@ -725,17 +583,18 @@ h2.info {
     .animacion {
         width: 100px;
         height: 100px;
-        font-size: 8px;
+        font-size: 16px;
     }
     .ultimasnot {
         width: 300px;
         font-size: 30px;
     }
     .box {
-        font-size: 10px;
+        font-size: 16px;
     }
     .box2 {
-        font-size: 10px;
+        font-size: 16px;
+        width: 100%;
     }
     .box {
         @include zise(343px, 200px, $color2, $color5);
@@ -798,13 +657,16 @@ p {
 h4 {
     padding: $zise2;
 }
-footer a {
-    margin: $zise2;
-    text-decoration: none;
-    padding: $zise2;
-}
+
 .footer-info {
-    background-color: rgb(85, 126, 151);
+    background-color: $color2;
+
+    a {
+        margin: $zise2;
+        text-decoration: none;
+        padding: $zise2;  
+
+    }
 }
 
 /*empieza terapeutas */

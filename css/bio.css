@@ -25,6 +25,12 @@ h1 {
   text-align: center;
 }
 
+.cartel marquee {
+  color: white;
+  padding: 40px;
+  margin-top: 30px;
+}
+
 .logo {
   float: left;
   color: red;
@@ -32,25 +38,6 @@ h1 {
 
 .logo span {
   color: black;
-}
-
-.barra {
-  float: right;
-}
-
-.barra ul li {
-  list-style: none;
-  display: inline-block;
-}
-
-.barra a {
-  color: red;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px white;
-}
-
-.barra a:hover {
-  color: white;
 }
 
 .cartel {
@@ -73,109 +60,6 @@ h1 {
   background-position: center;
 }
 
-.section-home {
-  display: flex;
-  background-color: red;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.card-home {
-  width: 30%;
-  background-color: rgba(63, 53, 58, 0.538);
-  border: 7px solid red;
-}
-
-.card__img {
-  height: 200px;
-  background-image: url(../multimedia/card1.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card__img2 {
-  height: 200px;
-  background-image: url(../multimedia/card2.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card__img3 {
-  height: 200px;
-  background-image: url(../multimedia/card3.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card__title {
-  text-align: center;
-  color: red;
-  font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card__desc {
-  padding: 20px;
-  color: white;
-}
-
-.card__boton {
-  background-color: red;
-  text-decoration: none;
-  color: white;
-  padding: 10px 20px;
-  display: block;
-  text-align: center;
-  width: 60%;
-  margin: 20px auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card__boton:hover {
-  background-color: rgb(159, 63, 63);
-  color: rgba(63, 53, 58, 0.538);
-}
-
-.card__img4 {
-  height: 200px;
-  height: 400px;
-  background-image: url(../multimedia/card4.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card__desc--align {
-  text-align: center;
-  font-size: 30px;
-}
-
-.card-home--xl {
-  width: 100%;
-}
-
-.card__boton--size {
-  width: 50%;
-}
-
-.card__img5 {
-  height: 200px;
-  background-image: url(../multimedia/card5.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card__img6 {
-  height: 200px;
-  background-image: url(../multimedia/card6.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.card-home--lg {
-  width: 50%;
-  margin: 10px;
-}
-
 audio {
   padding: 20px;
 }
@@ -189,10 +73,6 @@ audio {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   float: right;
   margin: 30px;
-}
-
-p.cartel {
-  margin-bottom: 20px;
 }
 
 .h2-home {
@@ -227,6 +107,18 @@ p {
   color: pink;
 }
 
+.foto-1 {
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.foto-2 {
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .footer-home {
   height: 200px;
   background-color: red;
@@ -234,7 +126,6 @@ p {
 
 @media only screen and (min-width: 320px) and (max-widht: 488px) {
   body {
-    width: 60%;
     height: 1200px;
     padding: 20px;
   }
@@ -290,6 +181,10 @@ footer a {
   right: 30px;
   bottom: 30px;
   text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   font-size: 25px;
 }
@@ -298,8 +193,9 @@ footer a {
   color: white;
 }
 
-.leg {
+.leg a {
   margin-left: 20px;
+  color: black;
 }
 
 .largo {
@@ -340,7 +236,7 @@ body.contacto {
 }
 
 .h3-contacto {
-  color: bisque;
+  color: black;
   border: 3px solid brown;
   border-radius: 5px;
   margin-top: 40px;
@@ -410,7 +306,7 @@ body.contacto {
   grid-area: img8;
 }
 
-.parr {
+.parr-cont {
   color: black;
 }
 
@@ -524,7 +420,7 @@ h3 {
 }
 /*empieza informacion*/
 .body {
-  background-image: linear-gradient(to left, rgb(205, 98, 115), rgb(192, 255, 216), rgb(85, 85, 217));
+  background-image: linear-gradient(to left, red, pink, red);
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -550,7 +446,7 @@ h2.info {
 }
 
 .galeria {
-  background-color: rgb(54, 123, 131);
+  background-color: pink;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(8, 200px);
@@ -671,16 +567,6 @@ h2.info {
   transform: rotateY(180deg);
 }
 
-.ultimasnot, .ultimasnot--nueva {
-  border: solid red 3px;
-  background-color: pink;
-  width: 600px;
-  height: 300px;
-  padding: 20px;
-  font-size: 60px;
-  border-radius: 10px;
-}
-
 .box {
   border: solid red 3px;
   font-size: 25px;
@@ -705,53 +591,6 @@ h2.info {
   height: 300px;
   background-color: pink;
   color: rgba(63, 53, 58, 0.538);
-}
-
-.flor {
-  font-size: 50px;
-  text-align: center;
-  color: red;
-}
-
-.flor1-icon,
-.flor2-icon,
-.flor3-icon {
-  height: 350px;
-  width: 100%;
-  border: 2px solid #333;
-}
-
-.flor1-icon {
-  background-image: url("../multimedia/flor1.jpeg");
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(100%);
-}
-
-.flor2-icon {
-  background-image: url("../multimedia/flores2.jpeg");
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(100%);
-}
-
-.flor3-icon {
-  background-image: url("../multimedia/flore3.jpeg");
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(100%);
-}
-
-.flor1-icon:hover {
-  filter: grayscale(0%);
-}
-
-.flor2-icon:hover {
-  filter: grayscale(0%);
-}
-
-.flor3-icon:hover {
-  filter: grayscale(0%);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 655px) {
@@ -765,17 +604,18 @@ h2.info {
   .animacion {
     width: 100px;
     height: 100px;
-    font-size: 8px;
+    font-size: 16px;
   }
-  .ultimasnot, .ultimasnot--nueva {
+  .ultimasnot {
     width: 300px;
     font-size: 30px;
   }
   .box {
-    font-size: 10px;
+    font-size: 16px;
   }
   .box2 {
-    font-size: 10px;
+    font-size: 16px;
+    width: 100%;
   }
   .box {
     width: 343px;
@@ -843,14 +683,13 @@ h4 {
   padding: 20px;
 }
 
-footer a {
+.footer-info {
+  background-color: pink;
+}
+.footer-info a {
   margin: 20px;
   text-decoration: none;
   padding: 20px;
-}
-
-.footer-info {
-  background-color: rgb(85, 126, 151);
 }
 
 /*empieza terapeutas */
