@@ -20,45 +20,26 @@ $zise1: 15px;
 $zise2: 20px;
 $zise3: 25px;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
-    background-color: $color4;
-    height: 80px;
 
-    font-weight: 300;
-    font-family: $font1;
-    font-size: $zise1;
-    padding: 30px;
-}
-h1 {
-    background-color: $color1;
-    text-align: center;
-}
+
+
 .cartel marquee {
     color: white;
     padding: 40px;
     margin-top: 30px;
 }
 
-.logo {
-    float: left;
-    color: $color1;
-}
+
 .logo span {
     color: black;
 }
 
-.cartel {
-    font-style: normal;
-}
+
 .body-home {
     background-image: url(../multimedia/biomagnetismo.jpg);
     background-size: cover;
     background-position: center;
+  
 }
 .main-home {
     height: 300px;
@@ -120,29 +101,21 @@ p {
     margin-left: 15px;
     margin-right: 15px;
 }
-.footer-home {
-    background-color: $color1;
-}
-@media only screen and (min-width: 320px) and (max-widht: 488px) {
-    .body-home{
-        width: 200px;
-    }
+
+@media only screen and (min-width: 320px) and (max-widht: 520px) {
+   
+   
     
-    .p {
-        font-size: 4px;
-    }
+   
    
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 521px) and (max-width: 560px){
     .cont{
-        width: 1200px;
+        width: 550px;
 
     }
     .conta{
-        width: 1200px;
-    }
-    .body-home{
-    width: 1200px;
+        width: 550px;
     }
 }
 @media only screen and (min-width: 1150px) {
@@ -195,7 +168,7 @@ footer a {
 /*empieza contacto*/
 
 body.body-contacto {
-    height: 100vp;
+   
 
     background-image: url(../multimedia/fondo-contaco.jpg);
     background-size: cover;
@@ -269,7 +242,7 @@ body.body-contacto {
 }
 @media only screen and (min-width: 250px) and (max-width: 520px) {
     .contenedor {
-        grid-template-columns: 500px;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
         grid-template-areas:
             "img1"
@@ -281,20 +254,14 @@ body.body-contacto {
             "img7"
             "img8";
     }
-   .cont{
-    width: 450px;}
-    .turno {
-        width: 300px;
-    }
-    .conta{
-        width: 450px;
-    }
+   
 }
-@media only screen and (min-width: 521px) and (max-width: 1023px) {
+@media only screen and (min-width: 521px) and (max-width: 560px) {
     .contenedor {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 200px);
     }
+    
 }
 @media only screen and (min-width: 1024px) {
     .contenedor {
