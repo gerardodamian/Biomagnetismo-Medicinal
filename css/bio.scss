@@ -125,15 +125,11 @@ p {
     margin-right: 15px;
 }
 .footer-home {
-    height: 200px;
+   
     background-color: $color1;
 }
 @media only screen and (min-width: 320px) and (max-widht: 488px) {
-    body {
-        
-        height: 1200px;
-        padding: $zise2;
-    }
+   
     h1 {
         width: 120%;
         font-size: 40px;
@@ -146,17 +142,10 @@ p {
     }
 }
 @media only screen and (min-width: 768px) {
-    body {
-        width: 100%;
-    }
+    
 }
 @media only screen and (min-width: 1150px) {
-    body {
-        width: 100%;
-        .barra a {
-            font-size: $zise2;
-        }
-    }
+   
 }
 
 p {
@@ -301,17 +290,12 @@ body.contacto {
 }
 @media only screen and (min-width: 320px) and (max-width: 520px) {
     header .contacto {
-        width: 200px;
+        width: 150px;
     }
     .body-contacto {
-        width: 400px;
+        width: 320px;
     }
-    .h2-contacto {
-        color: black;
-        margin: 2px;
-        font-size: 30px;
-        text-align: center;
-    }
+   
 
     .contenedor {
         grid-template-columns: 1fr;
@@ -328,9 +312,7 @@ body.contacto {
     }
 }
 @media only screen and (min-width: px) and (max-width: 1023px) {
-    .h2-contacto {
-        font-size: 40px;
-    }
+    
     header.contacto {
         width: 900px;
     }
@@ -420,6 +402,10 @@ h3 {
     background-position: center;
     background-size: cover;
     width: 100vw;
+    padding: 30px;
+}
+header{
+    height: 200px;
 }
 
 
@@ -576,31 +562,21 @@ h2.info {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
     }
-    .body-informacion {
-       
-        width: 100vw;
-    }
-    .animacion {
-        width: 100px;
-        height: 100px;
-        font-size: 16px;
-    }
-    .ultimasnot {
-        width: 300px;
-        font-size: 30px;
-    }
+   
+    
+    
     .box {
         font-size: 16px;
     }
     .box2 {
         font-size: 16px;
-        width: 100%;
+        width: 80%;
     }
     .box {
-        @include zise(343px, 200px, $color2, $color5);
+        @include zise(320px, 290px, $color2, $color5);
     }
     .box2 {
-        @include zise(343px, 200px, $color2, $color5);
+        @include zise(320px, 290px, $color2, $color5);
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -654,9 +630,7 @@ p {
     font-weight: 200;
 }
 
-h4 {
-    padding: $zise2;
-}
+
 
 .footer-info {
     background-color: $color2;
@@ -671,13 +645,8 @@ h4 {
 
 /*empieza terapeutas */
 
-.header-ter {
-    height: 80px;
-    background-color: $color1;
-    display: flex;
-    justify-content: space-between;
-    padding: $zise2;
-    font-size: $zise3;
+.header{
+    padding-top: 30px;
 }
 .logo {
     color: $color5;
@@ -815,14 +784,11 @@ body {
 .footer-ter a {
     text-decoration: none;
 }
-@media only screen and (min-width: 320px) and (max-width: 580px) {
-    .call {
-        height: 100%;
-    }
+@media only screen and (min-width: 320px) and (max-width: 780px) {
+  
 
     header {
-        height: 100px;
-        font-size: 17px;
+      margin-bottom: 20px;
     }
     .logo {
         font-size: $zise2;
@@ -848,7 +814,7 @@ body {
         height: 800px;
     }
     .ter {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 /*empieza noticias*/
