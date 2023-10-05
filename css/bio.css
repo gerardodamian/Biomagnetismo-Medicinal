@@ -6,6 +6,14 @@
 /*font-family: 'Caprasimo', cursive;
   font-family: 'Handjet', cursive;
   */
+h1 {
+  text-shadow: 3px 8px rgba(0, 0, 0, 0.3294117647);
+}
+
+.icon {
+  box-shadow: 5px 12px rgba(0, 0, 0, 0.3294117647);
+}
+
 .cartel marquee {
   color: white;
   padding: 40px;
