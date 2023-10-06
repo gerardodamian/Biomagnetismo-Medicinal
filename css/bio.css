@@ -102,22 +102,10 @@ p {
   width: 100%;
   height: 100vh;
   position: absolute;
-  opacity: 0.7;
-}
-
-.parrafo {
-  display: inline-flexbox;
-  z-index: 1;
-  width: 540px;
-  height: 840px;
-  padding: 20px 20px;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: justify;
 }
 
 .parrafo img {
-  width: 200px;
+  width: 350px;
   float: left;
   margin-right: 15px;
 }

@@ -1,4 +1,8 @@
-*{margin: 0; padding: 0; box-sizing: border-box ;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @font-face {
     font-family: booter;
     src: url(font/BOOTERFF.ttf);
@@ -21,13 +25,11 @@ $zise1: 15px;
 $zise2: 20px;
 $zise3: 25px;
 
-
-
-h1{
-    text-shadow: 3px 8px  #00000054;
+h1 {
+    text-shadow: 3px 8px #00000054;
 }
-.icon{
-    box-shadow: 5px 12px  #00000054; 
+.icon {
+    box-shadow: 5px 12px #00000054;
 }
 .cartel marquee {
     color: white;
@@ -35,17 +37,14 @@ h1{
     margin-top: 30px;
 }
 
-
 .logo span {
     color: black;
 }
-
 
 .body-home {
     background-image: url(../multimedia/biomagnetismo.jpg);
     background-size: cover;
     background-position: center;
-  
 }
 .main-home {
     height: 300px;
@@ -98,57 +97,36 @@ p {
     color: $color2;
 }
 
-.mujer{
+.mujer {
     width: 600px;
     height: 350px;
-    
+
     margin-right: 25px;
     box-shadow: 9px 18px #0000006a;
 }
-.capa{
+.capa {
     width: 100%;
     height: 100vh;
     position: absolute;
-  
-    opacity: 0.7;
 }
-.parrafo{
-    display:inline-flexbox;
-    z-index: 1;
-    width: 540px;
-    height: 840px;
-    padding: 20px 20px;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: justify;
-   
 
-
-   
-}
-.parrafo img{
-    width: 200px;
+.parrafo img {
+    width: 350px;
     float: left;
     margin-right: 15px;
 }
-.que-es{
+.que-es {
     color: $color1;
-    text-shadow:3px 6px #0000006a ;
+    text-shadow: 3px 6px #0000006a;
 }
-
 
 @media only screen and (min-width: 320px) and (max-widht: 520px) {
-   
- 
-   
-   
 }
-@media only screen and (min-width: 521px) and (max-width: 560px){
-    .cont{
+@media only screen and (min-width: 521px) and (max-width: 560px) {
+    .cont {
         width: 550px;
-
     }
-    .conta{
+    .conta {
         width: 550px;
     }
 }
@@ -202,8 +180,6 @@ footer a {
 /*empieza contacto*/
 
 body.body-contacto {
-   
-
     background-image: url(../multimedia/fondo-contaco.jpg);
     background-size: cover;
     background-position: center;
@@ -213,7 +189,6 @@ body.body-contacto {
 
     margin: $zise2;
 }
-
 
 .contenedor {
     background-color: rgba(255, 0, 0, 0.534);
@@ -288,24 +263,19 @@ body.body-contacto {
             "img7"
             "img8";
     }
-    form.turno{
+    form.turno {
         width: 350px;
     }
     .whatsapp {
-
         padding-left: 15px;
         padding-right: 15px;
-       
     }
-   
 }
 @media only screen and (min-width: 521px) and (max-width: 560px) {
     .contenedor {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 200px);
     }
-    
-    
 }
 @media only screen and (min-width: 1024px) {
     .contenedor {
@@ -746,7 +716,6 @@ section {
     border-radius: 0px, 0px, 10px, 10px;
 }
 
-
 .card h2 {
     color: $color2;
 }
@@ -785,11 +754,11 @@ body {
     header {
         margin-bottom: 20px;
     }
-    
+
     .call {
         height: 80%;
     }
-    section{
+    section {
         display: inline;
     }
     .main-ter {
