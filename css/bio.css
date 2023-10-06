@@ -241,6 +241,13 @@ body.body-contacto {
     grid-template-rows: repeat(8, 200px);
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8";
   }
+  form.turno {
+    width: 350px;
+  }
+  .whatsapp {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media only screen and (min-width: 521px) and (max-width: 560px) {
   .contenedor {
