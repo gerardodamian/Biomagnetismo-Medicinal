@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 @font-face {
     font-family: booter;
@@ -64,7 +65,7 @@ audio {
     background-color: rgba(156, 59, 59, 0.679);
     border: 4px solid black;
     padding: $zise2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     float: right;
     margin: 30px;
 }
@@ -75,8 +76,7 @@ audio {
 }
 .p-home {
     border: 3px solid black;
-    padding: $zise2;
-    font-family: "Times New Roman", Times, serif;
+
     color: $color5;
 }
 
@@ -115,6 +115,9 @@ p {
     float: left;
     margin-right: 15px;
 }
+.parrafo {
+    padding: 20px;
+}
 .que-es {
     color: $color1;
     text-shadow: 3px 6px #0000006a;
@@ -142,7 +145,7 @@ footer {
 footer a {
     text-decoration: none;
     color: black;
-    font-size: $zise2;
+    
 }
 .pie {
     margin-top: $zise2;
@@ -151,22 +154,21 @@ footer a {
 }
 .whatsapp {
     height: 30px;
-
     background-color: $color3;
-    color: $color5;
     position: fixed;
     right: 30px;
     bottom: 30px;
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    font-size: $zise3;
+    
 }
 .whatsapp a {
     color: $color5;
+   font-size: 30px;
 }
 .leg a {
     margin-left: $zise2;
@@ -266,9 +268,12 @@ body.body-contacto {
     form.turno {
         width: 350px;
     }
+    .pida-turno {
+        width: 350px;
+    }
     .whatsapp {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 @media only screen and (min-width: 521px) and (max-width: 560px) {
@@ -300,6 +305,21 @@ h3 {
     color: $color5;
     text-align: center;
 }
+.pida-turno {
+    text-align: center;
+    background-color: $color1;
+    border-radius: 3px;
+    width: 100vw;
+    justify-content: center;
+    padding: 30px;
+}
+.pida-turno h2 {
+    font-size: 35px;
+    color: $color5;
+}
+.turno ::placeholder {
+    color: $color1;
+}
 
 .turno {
     width: 500px;
@@ -308,13 +328,13 @@ h3 {
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
-    font-family: calibri;
     color: $color5;
     box-shadow: 7px 13px 37px #000;
 }
 .turno h4 {
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .controls {
     width: 100%;
@@ -323,9 +343,8 @@ h3 {
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid $color6;
-    font-family: calibri;
     font-size: 18px;
-    color: white;
+    color: $color1;
 }
 
 .turno p {
@@ -349,7 +368,8 @@ h3 {
     padding: 12px;
     color: $color5;
     margin: 16px 0;
-    font-size: 16px;
+    font-size: 25px;
+    border-radius: 5px;
 }
 .turno .button:hover {
     background: rgb(31, 28, 28);
@@ -423,7 +443,6 @@ header {
 
 h2.info {
     text-align: center;
-    font-family: "Oswald", sans-serif;
     padding: $zise2;
     color: rgb(42, 4, 4);
     border: 2px solid rgb(42, 4, 4);
@@ -626,7 +645,6 @@ p {
 
 .logo {
     color: $color5;
-    font-family: "Barriecito";
     font-weight: bold;
     font-size: 50px;
 }
@@ -738,7 +756,6 @@ body {
 .ult {
     border: 2px solid $color6;
     padding: $zise2;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: $zise1;
     color: $color1;
 }
