@@ -146,7 +146,6 @@ footer a {
 
 .whatsapp {
   height: 30px;
-  background-color: green;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -159,7 +158,7 @@ footer a {
 }
 
 .whatsapp a {
-  color: white;
+  color: green;
   font-size: 30px;
 }
 
