@@ -123,6 +123,7 @@ p {
     text-shadow: 3px 6px #0000006a;
 }
 
+
 @media only screen and (min-width: 320px) and (max-widht: 520px) {
 }
 @media only screen and (min-width: 521px) and (max-width: 560px) {
@@ -136,17 +137,20 @@ p {
 @media only screen and (min-width: 1150px) {
 }
 
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 footer {
-    background-color: brown;
+    background-color: $color1;
 }
-footer a {
+.face a {
     text-decoration: none;
-    color: black;
+    color: $color2;
+    padding-left: 250px;
+    justify-content: center;
+    font-size: 35px;
+    letter-spacing: 13px;
     
 }
+
 .pie {
     margin-top: $zise2;
     margin: 80px;
@@ -810,3 +814,12 @@ body {
     }
 }
 /*empieza noticias*/
+.face1 a {
+    text-decoration: none;
+    color: $color1;
+    padding-left: 250px;
+    justify-content: center;
+    font-size: 35px;
+    letter-spacing: 13px;
+    
+}

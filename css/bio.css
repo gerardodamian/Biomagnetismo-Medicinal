@@ -125,17 +125,17 @@ p {
     width: 550px;
   }
 }
-p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 footer {
-  background-color: brown;
+  background-color: red;
 }
 
-footer a {
+.face a {
   text-decoration: none;
-  color: black;
+  color: pink;
+  padding-left: 250px;
+  justify-content: center;
+  font-size: 35px;
+  letter-spacing: 13px;
 }
 
 .pie {
@@ -853,5 +853,13 @@ body {
   }
 }
 /*empieza noticias*/
+.face1 a {
+  text-decoration: none;
+  color: red;
+  padding-left: 250px;
+  justify-content: center;
+  font-size: 35px;
+  letter-spacing: 13px;
+}
 
 /*# sourceMappingURL=bio.css.map */
