@@ -166,6 +166,7 @@ p {
   text-align: center;
   transition: all 300ms ease;
   border-radius: 50%;
+  font-size: 25px;
 }
 
 .pie-pagi .grupo-1 .red-social a:hover {
@@ -174,7 +175,7 @@ p {
 
 .pie-pagi .grupo-2 {
   background-color: #58030a;
-  padding: 15px 10px;
+  padding: 15px 20px;
   text-align: center;
   color: white;
 }
