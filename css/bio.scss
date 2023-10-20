@@ -9,13 +9,11 @@
     src: url(font/BOOTERFF.ttf);
 }
 
-@import url("https://fonts.googleapis.com/css2? family= Caprasimo & family= Handjet:wght@300 & display=swap");
-
 /*font-family: 'Caprasimo', cursive;
   font-family: 'Handjet', cursive;
   */
-$color1:#E63946;
-$color2: #F2929A;
+$color1: #e63946;
+$color2: #f2929a;
 $color3: green;
 $color4: rgba(63, 53, 58, 0.538);
 $color5: white;
@@ -122,42 +120,39 @@ p {
     color: $color1;
     text-shadow: 3px 6px #0000006a;
 }
-.pie-pagi{
+.pie-pagi {
     width: 100%;
     background-color: $color1;
-
 }
-.pie-pagi .grupo-1{
+.pie-pagi .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
-
 }
-.pie-pagi .grupo-1 .caja figure{
+.pie-pagi .grupo-1 .caja figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagi .grupo-1 .caja figure img{
+.pie-pagi .grupo-1 .caja figure img {
     width: 130px;
-  
-} 
-.pie-pagi .grupo-1 .caja h2{
+}
+.pie-pagi .grupo-1 .caja h2 {
     color: $color5;
     margin-bottom: 25px;
     font-size: 25px;
 }
-.pie-pagi .grupo-1 .caja p{
+.pie-pagi .grupo-1 .caja p {
     color: aliceblue;
     margin-bottom: 10px;
 }
-.pie-pagi .grupo-1 .red-social a{
+.pie-pagi .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -169,29 +164,25 @@ p {
     transition: all 300ms ease;
     border-radius: 50%;
     font-size: 25px;
-    
-    
-    
 }
-.pie-pagi .grupo-1 .red-social a:hover{
+.pie-pagi .grupo-1 .red-social a:hover {
     color: #58030a;
 }
-.pie-pagi .grupo-2{
-    background-color:#58030a;
+.pie-pagi .grupo-2 {
+    background-color: #58030a;
     padding: 15px 20px;
     text-align: center;
     color: $color5;
 }
-.pie-pagi .grupo-2 small{
+.pie-pagi .grupo-2 small {
     font-size: 15px;
 }
-@media screen and (max-width:800px){
-    .pie-pagi .grupo-1{
+@media screen and (max-width: 800px) {
+    .pie-pagi .grupo-1 {
         width: 90%;
-        grid-template-columns:repeat(1, 1fr) ;
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
-    
     }
 }
 
@@ -208,8 +199,6 @@ p {
 @media only screen and (min-width: 1150px) {
 }
 
-
-
 .face a {
     text-decoration: none;
     color: $color2;
@@ -217,9 +206,7 @@ p {
     justify-content: center;
     font-size: 35px;
     letter-spacing: 13px;
-    
 }
-
 
 .whatsapp {
     height: 30px;
@@ -233,11 +220,10 @@ p {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    
 }
 .whatsapp a {
     color: greenyellow;
-   font-size: 40px;
+    font-size: 40px;
 }
 .leg a {
     margin-left: $zise2;
@@ -377,7 +363,6 @@ h3 {
     width: 100vw;
     justify-content: center;
     padding: 30px;
-  
 }
 .pida-turno h2 {
     font-size: 35px;
