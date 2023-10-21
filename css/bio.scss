@@ -91,6 +91,7 @@ audio {
 .call-home a:hover {
     background-color: maroon;
 }
+
 p {
     color: $color2;
 }
@@ -479,9 +480,7 @@ h3 {
 
     padding: 30px;
 }
-header {
-    height: 200px;
-}
+
 
 .inicio a {
     background-color: $color1;
@@ -493,6 +492,14 @@ header {
     right: 40px;
     bottom: 40px;
 }
+.r1 {
+    padding-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
+ }
 
 h2.info {
     text-align: center;
