@@ -1,221 +1,383 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="biomagnetismo imanes que sanan" />
-        <meta
-            name="keywords"
-            content="biomagnetismo, medicina, alternativa, terapia, imanes"
-        />
-        <title>Informacion</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-            crossorigin="anonymous"
-        />
-        <script src="https://kit.fontawesome.com/226c66f217.js" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/4db3f232fb.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="../multimedia/logo-bio.ico" />
-        <link rel="stylesheet" href="../css/bio.css" />
-    </head>
-    <header>
-        <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"
-                    ><div class="logo">
-                        <img
-                            class="icon"
-                            src="../multimedia/logo-bio.ico"
-                            alt="icono"
-                            height="50"
-                            width="auto"
-                        />
-                        <h1>Infor<span>macion</span></h1>
-                    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Información | Biomagnetismo Medicinal Los Robles</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary-red: #dc2626;
+      --dark-red: #991b1b;
+      --burgundy: #7f1d1d;
+      --light-gray: #f8f9fa;
+      --dark-gray: #374151;
+      --black: #1f2937;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light-gray);
+      color: var(--black);
+      margin-top: 80px;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 600;
+  padding: 10px 20px !important;
+  margin: 0 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-2px);
+  color: #ffd700 !important;
+}
+
+
+    .navbar-brand h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.navbar-brand span {
+  color: #ffd700;
+}
+
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white !important;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    .navbar-brand span {
+      color: #ffd700;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 600;
+    }
+
+    .nav-link:hover {
+      color: #ffd700 !important;
+    }
+
+    .main-content {
+      padding: 60px 20px;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      border-left: 5px solid var(--primary-red);
+    }
+
+    .info-card h2 {
+      color: var(--primary-red);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .info-card p,
+    .info-card ul {
+      color: var(--dark-gray);
+      line-height: 1.8;
+    }
+
+    .hero-img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery div {
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      aspect-ratio: 1 / 1;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .footer {
+  background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
+  color: white;
+  padding: 60px 0 20px;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-red), var(--burgundy), var(--primary-red));
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: var(--primary-red);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer-section p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #d1d5db;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  width: 45px;
+  height: 45px;
+  background: var(--primary-red);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.social-links a:hover {
+  background: var(--dark-red);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--dark-gray);
+  padding-top: 20px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+
+    .btn-back {
+      display: inline-block;
+      background: var(--primary-red);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .btn-back:hover {
+      background: var(--dark-red);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../multimedia/logo-bio.ico" width="60" height="60" alt="Logo">
+            <h1>Biomag<span>netismo</span></h1>
+          </a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">
+                  <i class="fas fa-phone"></i> Contacto
                 </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html"
-                                ><i class="fa-solid fa-phone fa-lg" style="color: #3f0301;"></i>contacto</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="informacion.html"
-                                ><i class="fa-solid fa-circle-info fa-lg" style="color: #3f0301;"></i>informacion</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="terapeutas.html"
-                                ><i class="fa-solid fa-handshake fa-lg" style="color: #3f0301;"></i>terapeutas</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ubicacion.html"
-                                ><i class="fa-solid fa-location-dot fa-lg" style="color: #3f0301;"></i>ubicacion</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="noticias.html"
-                                ><i class="fa-solid fa-newspaper fa-lg" style="color: #3f0301;"></i>noticias</a
-                            >
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html"
-                                ><i class="fa-solid fa-house fa-lg" style="color: #63031b;"></i>volver inicio</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <body class="body-info">
-        <h1>Para que sirve el Biomagnetismo Medicinal?</h1>
-
-        <img
-            src="../multimedia/fotoinfo.webp"
-            alt="imanes"
-            height="500px"
-            width="100%"
-        />
-        
-        <div class="r1">
-            <a href="https://www.facebook.com/profile.php?id=100075131217667&mibextid=ZbWKwL"><i class="fa-brands fa-facebook  fa-2xl" style="color: #2456ae;"></i></a>
-            
-            <a href="https://www.youtube.com/channel/UCzGqoNLAQgo3qLTULuwqPeQ"><i class="fa-brands fa-youtube  fa-2xl" style="color: #df0c0c;"></i></a>
-
-            <a href="https://instagram.com/biomagnetismo_a.g?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram  fa-2xl" style="color: #cd189d;"></i></a>
-           
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="informacion.html">
+                  <i class="fas fa-info-circle"></i> Información
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="terapeutas.html">
+                  <i class="fas fa-handshake"></i> Terapeutas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ubicacion.html">
+                  <i class="fas fa-location-dot"></i> Ubicación
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="noticias.html">
+                  <i class="fas fa-newspaper"></i> Noticias
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                  <i class="fas fa-house"></i> Inicio
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      
+  </header>
 
-        <p>
-            Los agentes patógenos (bacterias, virus, parásitos y hongos) y las
-            relaciones entre sí son causa de enfermedades, incluyendo lo que
-            llamamos enfermedades de origen desconocido. Esos agentes patógenos
-            necesitan y causan una distorsión en el PH de los tejidos y los
-            órganos, haciéndolos más ácidos o más alcalinos. Esta alteración
-            conduce a la disfunción de los tejidos y órganos y como resultado
-            tenemos los síntomas de las enfermedades. La forma de proceder del
-            Biomagnetismo Médico está basada en la existencia de una reacción
-            muscular instantánea del cuerpo, dependiendo de las propiedades
-            magnéticas de los patógenos y del tejido o el órgano. La aplicación
-            de dos imanes de mediana intensidad de carga contraria, positiva y
-            negativa, en partes específicas de nuestro cuerpo, recupera el
-            equilibrio o PH neutro y de este equilibrio depende nuestra salud.
-            La gran mayoría de las enfermedades orgánicas, trastornos
-            emocionales y mentales son provocadas por los microorganismos
-            patógenos. Enfermedades que trata el Biomagnetismo Médico: dolores
-            musculares y dolores articulares, cefalea, dolor de cintura,
-            artritis, fibromialgia, osteoartritis, tendinitis, dolores lumbares,
-            insomnio, falta de circulación, inflamación de los pies, obesidad,
-            migrañas, entre otras. El Biomagnetismo también trata enfermedades
-            físicas usuales y problemas emocionales, propios de niños y
-            adolescentes disfunción o dificultades en el lenguaje, tartamudez,
-            dislexia, drogadicción, alcoholismo, baja autoestima, depresión,
-            anorexia, bulimia, autismo, agresividad, atención y concentración,
-            hiperactividad, tendencia antisocial.
-        </p>
+  <!-- Contenido principal -->
+  <section class="main-content container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="../multimedia/fotoinfo.webp" alt="Biomagnetismo Imanes" class="hero-img" />
+      </div>
+    </div>
 
-        <h2>¿Qué Beneficios Tiene El Biomagnetismo?</h2>
-        <p>
-            Usos y funciones del Biomagnetismo – Ahora bien, una vez que ya
-            mencionamos que es el Biomagnetismo , nos enfocaremos en hablar
-            sobre sus usos y funciones. Pues principalmente el uso o función de
-            esta terapia alternativa es el reequilibrio energético del cuerpo,
-            sin embargo, también ayuda a: Armonizar emociones. Mejorar el estado
-            de salud. Equilibrio mental. Aquí es importante mencionar que el
-            terapeuta o experto en Biomagnetismo recurre al estudio,
-            observación, análisis y medición de ciertos parámetros para saber
-            cómo será la terapia alternativa de cada paciente.
-        </p>
-        <h2 class="info">
-            Consumir frutos secos y frutos rojos alarga nuestra vida
-        </h2>
-        <div class="galeria">
-            <div class="item item9"></div>
-            <div class="item item10"></div>
-            <div class="item item11"></div>
-            <div class="item item12"></div>
-            <div class="item item13"></div>
-            <div class="item item14"></div>
-            <div class="item item15"></div>
-            <div class="item item16"></div>
+    <div class="info-card">
+      <h2>¿Para qué sirve el Biomagnetismo Medicinal?</h2>
+      <p>
+        El biomagnetismo ayuda a restaurar el pH neutro en el cuerpo, eliminando microorganismos patógenos (bacterias, virus, hongos, parásitos) que alteran el equilibrio del organismo. Se aplica con pares de imanes en puntos estratégicos del cuerpo para recuperar la salud y tratar desde dolores físicos hasta trastornos emocionales.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h2>Beneficios del Biomagnetismo</h2>
+      <p>Esta terapia busca equilibrar la energía del cuerpo y puede mejorar:</p>
+      <ul>
+        <li>Dolores musculares y articulares</li>
+        <li>Insomnio, migrañas, obesidad</li>
+        <li>Problemas de atención o conducta en niños</li>
+        <li>Estados emocionales como ansiedad o depresión</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h2>Consumir frutos secos y rojos alarga la vida</h2>
+      <p>Los frutos secos y los frutos rojos aportan antioxidantes que protegen el organismo y ayudan a prevenir enfermedades crónicas.</p>
+      <div class="gallery">
+        <div style="background-image: url('../multimedia/info2.jpg');"></div>
+        <div style="background-image: url('../multimedia/info3.jpg');"></div>
+        <div style="background-image: url('../multimedia/info4.jpg');"></div>
+        <div style="background-image: url('../multimedia/info5.jpg');"></div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <p>
+        El biomagnetismo es una terapia complementaria que puede acompañar los tratamientos médicos tradicionales, ayudando a reducir efectos secundarios y a mejorar la evolución del paciente.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <p>
+        Esta disciplina tiene raíces antiguas en civilizaciones como la egipcia, china o árabe. Incluso Cleopatra usaba imanes con fines estéticos y de salud.
+      </p>
+    </div>
+
+    <div class="text-center">
+      <a href="../index.html" class="btn-back">Volver al inicio</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="../multimedia/logo-bio.ico" alt="Logo Biomagnetismo" />
+            <h3>Biomagnetismo Los Robles</h3>
+          </div>
         </div>
-
-        <div class="inicio">
-            <a href="../index.html">volver al inicio</a>
+  
+        <div class="footer-section">
+          <h3>Sobre Nosotros</h3>
+          <p>
+            Desde ya hace ocho años estamos brindando nuestros servicios a los pacientes de todo el país.
+          </p>
+          <p>
+            Por cualquier consulta o si necesita información de la terapia, turnos o ubicación, 
+            no dude en escribirnos por WhatsApp al 3827-400933.
+          </p>
         </div>
-
-        <div class="box">
-            <p>
-                19 de enero de 2018 - Es importante señalar que el biomagnetismo
-                es una terapia complementaria que busca acompañar los
-                tratamientos de la medicina tradicional y que éstos puedan tener
-                una mejor evolución y ayude a paliar los efectos secundarios de
-                los medicamentos.
-            </p>
+  
+        <div class="footer-section">
+          <h3>Síguenos</h3>
+          <div class="social-links">
+            <a href="https://facebook.com/profile.php?id=100075131217667" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/biomagnetismo_a.g" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCzGqoNLAQgo3qLTULuwqPeQ" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-        <div class="box2">
-            <p>
-                El Biomagnetismo, es una disciplina cuyo rastro documentado
-                encontramos en diferentes culturas ancestrales como la china,
-                árabe, hindú, hebrea y egipcia, en donde utilizaban imanes con
-                fines curativos. Cleopatra que los usaba para conservar su
-                belleza,
-            </p>
-        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <small>&copy; 2025 <strong>Biomagnetismo Medicinal "Los Robles"</strong> - Todos los Derechos Reservados</small>
+      </div>
+    </div>
+  </footer>
+  
 
-        <footer class="pie-pagi">
-            <div class="grupo-1">
-                <div class="caja">
-                    <figure>
-                        <a href="#">
-                            <img src="../multimedia/logo-bio.ico" alt="logo">
-                        </a>
-                    </figure>
-                </div>
-                <div class="caja">
-                    <h2>SOBRE NOSOTROS</h2>
-                    <p>Desde ya hace ocho años estamos brindando nuetros servicios a los pacientes de todo el pais</p>
-                    <p>
-                        Por cualquier consulta o si necesita informacion de la terapia, turnos o ubicacion, no dude en escribirnos por whatsApp al 3827-400933.
-                    </p>
-                </div>
-                <div class="caja">
-                    <h2>SIGUENOS</h2>
-                    <div class="red-social">
-                        <a href="https://www.facebook.com/profile.php?id=100075131217667&mibextid=ZbWKwL" class="fa fa-facebook"></a>
-                        <a href="https://instagram.com/biomagnetismo_a.g?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="https://www.youtube.com/channel/UCzGqoNLAQgo3qLTULuwqPeQ" class="fa fa-youtube"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="grupo-2">
-                <small>&copy; 2023 <b>Biomagnetismo Medicinal "Los Robles"</b> - Todos los Derechos Reservados</small>
-            </div>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

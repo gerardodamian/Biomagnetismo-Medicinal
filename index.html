@@ -1,210 +1,751 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="biomagnetismo imanes que sanan" />
-        <meta
-            name="keywords"
-            content="biomagnetismo, medicina, alternativa, terapia, imanes"
-        />
-        <title>Biomagnetismo Medicinal Los Robles</title>
-        <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous"
-/>
-        <script src="https://kit.fontawesome.com/4db3f232fb.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biomagnetismo Medicinal Los Robles - Terapia con imanes que equilibra el pH corporal. 8 años de experiencia sanando pacientes en todo el país.">
+    <meta name="keywords" content="biomagnetismo, medicina alternativa, terapia con imanes, equilibrio pH, sanación natural">
+    <title>Biomagnetismo Medicinal Los Robles</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #dc2626;
+            --secondary-red: #b91c1c;
+            --dark-red: #991b1b;
+            --burgundy: #7f1d1d;
+            --light-gray: #f8f9fa;
+            --medium-gray: #6b7280;
+            --dark-gray: #374151;
+            --black: #1f2937;
+        }
 
-        <link rel="icon" href="multimedia/logo-bio.ico" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-            crossorigin="anonymous"
-        />
-        <script src="https://kit.fontawesome.com/226c66f217.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/bio.css" />
-    </head>
-    <body class="body-home">
-        <script src="./js/app.js" async></script>
-        <header class="cont">
-            <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"
-                        ><div class="logo">
-                            <img class="icon"
-                            src="multimedia/logo-bio.ico"
-                            alt="icono"
-                            height="80"
-                            width="auto"
-                        /> 
-                        <h1> Biomag<span>netismo</span> </h1>
-                        </div>
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavbar"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse"
-                        id="collapsibleNavbar"
-                    >
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/contacto.html"
-                                    ><i class="fa-solid fa-phone fa-lg" style="color: #3f0301;"></i>contacto</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    href="pages/informacion.html"
-                                    ><i class="fa-solid fa-circle-info fa-lg" style="color: #3f0301;"></i>informacion</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/terapeutas.html"
-                                    ><i class="fa-solid fa-handshake fa-lg" style="color: #3f0301;"></i>terapeutas</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/ubicacion.html"
-                                    ><i class="fa-solid fa-location-dot fa-lg" style="color: #3f0301;"></i>ubicacion</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/noticias.html"
-                                    ><i class="fa-solid fa-newspaper fa-lg" style="color: #3f0301;"></i>noticias</a
-                                >
-                            </li>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html"
-                                    ><i class="fa-solid fa-house fa-lg" style="color: #63031b;"></i>volver inicio</a
-                                >
-                            </li>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            overflow-x: hidden;
+        }
+
+        /* Header Moderno */
+        .header {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(220, 38, 38, 0.95);
+            backdrop-filter: blur(15px);
+        }
+
+        .navbar {
+            padding: 0.8rem 0;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white !important;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar-brand img {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .navbar-brand h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .navbar-brand span {
+            color: #ffd700;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 600;
+            padding: 10px 20px !important;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-2px);
+            color: #ffd700 !important;
+        }
+
+        .navbar-nav .nav-link i {
+            font-size: 1rem;
+        }
+
+        .navbar-toggler {
+            border: none;
+            padding: 4px 8px;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+        /* Marquee Moderno */
+        .announcement-bar {
+            background: linear-gradient(90deg, var(--burgundy), var(--dark-red));
+            color: white;
+            padding: 10px 0;
+            margin-top: 80px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .announcement-text {
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(31, 41, 55, 0.8), rgba(127, 29, 29, 0.7)), 
+                        var(--light-gray);
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(127, 29, 29, 0.1) 0%, transparent 50%);
+            animation: backgroundShift 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes backgroundShift {
+            0% { opacity: 0.3; }
+            100% { opacity: 0.6; }
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+            color: #ffd700;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            margin-bottom: 30px;
+            opacity: 0.95;
+            font-weight: 400;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+
+        .btn-hero {
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+            border: 2px solid transparent;
+        }
+
+        .btn-hero:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(220, 38, 38, 0.4);
+            color: white;
+            background: linear-gradient(135deg, var(--dark-red), var(--burgundy));
+        }
+
+        /* Audio Section */
+        .audio-section {
+            background: var(--dark-gray);
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .audio-section h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .audio-section audio {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        /* Sección Principal con Imagen */
+        .main-content {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--primary-red);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card h2 {
+            color: var(--primary-red);
+            font-size: 2rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .info-card p {
+            color: var(--dark-gray);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .woman-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .woman-image:hover {
+            transform: scale(1.02);
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .benefits-list li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: var(--dark-gray);
+            font-weight: 500;
+        }
+
+        .benefits-list i {
+            color: var(--primary-red);
+            font-size: 1.2rem;
+        }
+
+        /* Footer Completo */
+        .footer {
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
+            color: white;
+            padding: 60px 0 20px;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-red), var(--burgundy), var(--primary-red));
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-red);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .footer-section p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #d1d5db;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: var(--primary-red);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background: var(--dark-red);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--medium-gray);
+            padding-top: 20px;
+            text-align: center;
+            color: #9ca3af;
+        }
+
+        /* WhatsApp Flotante */
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4), 0 0 0 10px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-brand h1 {
+                font-size: 1.5rem;
+            }
+
+            .navbar-brand img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .hero {
+                min-height: 60vh;
+            }
+
+            .info-card {
+                padding: 30px 20px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 26px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        /* Animaciones de entrada */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Enlace especial para Clarín */
+        .clarin-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(220, 38, 38, 0.2);
+        }
+
+        .clarin-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="multimedia/logo-bio.ico" alt="Biomagnetismo Logo">
+                    <h1>Biomag<span>netismo</span></h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">
+                                <i class="fas fa-phone"></i>
+                                Contacto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/informacion.html">
+                                <i class="fas fa-info-circle"></i>
+                                Información
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/terapeutas.html">
+                                <i class="fas fa-handshake"></i>
+                                Terapeutas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/ubicacion.html">
+                                <i class="fas fa-location-dot"></i>
+                                Ubicación
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/noticias.html">
+                                <i class="fas fa-newspaper"></i>
+                                Noticias
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-house"></i>
+                                Inicio
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Barra de anuncios -->
+    <div class="announcement-bar">
+        <div class="announcement-text">
+            Hola, por turnos hacelo por whatsApp al 3827400933 😊😊 • Hola, por turnos hacelo por whatsApp al 3827400933 😊😊
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h1>Imanes que Curan</h1>
+                <p class="hero-subtitle">
+                    Los imanes estabilizan el pH de tu cuerpo, así mueren hongos, parásitos, virus y bacterias
+                </p>
+                <a href="pages/informacion.html" class="btn-hero">
+                    <i class="fas fa-info-circle"></i>
+                    Más Información
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Section -->
+    <section class="audio-section">
+        <div class="container">
+            <h3><i class="fas fa-play-circle"></i> Escucha más sobre el Biomagnetismo</h3>
+            <audio controls>
+                <source src="multimedia/audio bio.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="main-content">
+        <div class="container">
+            <!-- Enlace a Clarín -->
+            <div class="text-center mb-5">
+                <p class="mb-3">Vea este artículo interesante:</p>
+                <a href="https://www.clarin.com/buena-vida/salud/beneficios-tratamiento-imanes_0_HJcBx6xowXx.amp.html?adcmp=&gclid=Cj0KCQjwz8emBhDrARIsANNJjS6sx3_7e2I14iX_UbqUkErZtm112TncV0FSi89SdFxqHxM1y7ZyGSgaAq6SEALw_wcB" 
+                   class="clarin-link" target="_blank">
+                    <i class="fas fa-newspaper"></i>
+                    Artículo de Diario <strong>Clarín</strong>
+                </a>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="info-card fade-in-up">
+                        <h2>¿Qué es el Biomagnetismo?</h2>
+                        <p>
+                            La magnetoterapia es una rama de medicina alternativa que utiliza campos magnéticos 
+                            para tratar el cuerpo humano. Sirve para tratar lesiones musculares y molestias en las articulaciones.
+                        </p>
+                        <p>
+                            Conocida como terapia magnética o terapia con imanes está basada en principios científicos 
+                            aunque no es una ciencia o rama médica. Similar a lo que es el biomagnetismo dinamiza las 
+                            corrientes del organismo y trata de curar con ellas.
+                        </p>
+                        <p>
+                            Su papel principal es estimular el organismo mediante flujos magnéticos. Hay una mayor 
+                            capacidad de regeneración de tejidos y un mejor caudal de expulsión de líquidos. 
+                            Sus ondas actúan en el interior del cuerpo, profundizando hasta el nivel de la sangre.
+                        </p>
+                        
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i> Equilibra el pH corporal naturalmente</li>
+                            <li><i class="fas fa-check-circle"></i> Elimina microorganismos patógenos</li>
+                            <li><i class="fas fa-check-circle"></i> Estimula la regeneración de tejidos</li>
+                            <li><i class="fas fa-check-circle"></i> Mejora la circulación sanguínea</li>
+                            <li><i class="fas fa-check-circle"></i> Terapia no invasiva</li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
-        
-        <div class="cartel">
-            <marquee behavior="" direction="right"
-                >Hola, por turnos hacelo por whatsApp al 3827400933 😊😊 Hola,
-                por turnos hacelo por whatsApp al 3827400933 😊😊</marquee
-            >
-        </div>
-
-        <main class="main-home">
-            <div class="call-home">
-                <h2 class="h2-home">Imanes que curan</h2>
-                <p class="cartel">
-                    Los imanes estabilizan el PH de tu cuerpo, asi mueren hongos
-                    , parasitos, virus y bacterias
-                </p>
-                <a href="pages/informacion.html">Mas Info</a>
-            </div>
-        </main>
-
-        <audio src="multimedia/audio bio.mp3" controls></audio>>
-        <nav class="parr">
-            <p class="p-home">
-                vea este articulo interesante
-                <a
-                    href="https://www.clarin.com/buena-vida/salud/beneficios-tratamiento-imanes_0_HJcBx6xowXx.amp.html?adcmp=&gclid=Cj0KCQjwz8emBhDrARIsANNJjS6sx3_7e2I14iX_UbqUkErZtm112TncV0FSi89SdFxqHxM1y7ZyGSgaAq6SEALw_wcB"
-                    ><em>Articulo de Diario</em> <b>Clarin</b></a
-                >
-            </p>
-                    <div class="capa">  </div>
                 
-                    <div class="parrafo"><img class="mujer" src="multimedia/card4.jpg" alt="mujer relajada">
-                        <p ><h2 class="que-es">¿Que és el Biomagnetismo?</h2>
-                        La magnetoterapia es una rama de medicina alternativa que utiliza campos magnéticos para tratar el cuerpo humano. Sirve para tratar lesiones musculares y molestias en las articulaciones.
-                        
-                        Conocida como terapia magnética o terapia con imanes está basada en principios científicos aunque no es una ciencia o rama médica. Similar a lo que es el biomagnetismo dinamiza las corrientes del organismo y trata de curar con ellas.
-                        
-                        Su papel principal es estimular el organismo mediante flujos magnéticos. Hay una mayor capacidad de regeneración de tejidos y un mejor caudal de expulsión de líquidos. Sus ondas actúan en el interior del cuerpo, profundizando hasta el nivel de la sangre.
-                        
-                        Al emitir señales hacia el interior del cuerpo relaja los músculos y facilita la exploración por un fisioterapeuta.</p>
-                        
+                <div class="col-lg-6 mb-4">
+                    <div class="text-center fade-in-up">
+                        <img src="multimedia/card4.jpg" alt="Mujer relajada en terapia de biomagnetismo" class="woman-image">
                     </div>
-                
-            <p class="largo">
-            La terapia magnética, magnetoterapia o biomagnetismo​ es una
-            práctica de medicina alternativa pseudocientífica en la que se
-            aplican campos magnéticos estáticos. Sus practicantes afirman que
-            someter a ciertas partes del cuerpo a campos magnetostáticos
-            producidos por imanes permanentes tiene efectos beneficiosos para la
-            salud.
-        </p>
-        <p class="largo">
-            En 1988 se conoce el concepto de Par Biomagnético como un
-            procedimiento de orden físico que detecta de forma cualitativa e
-            indirecta por medio de imanes de mediana intensidad las alteraciones
-            fundamentales del ph de los órganos internos .
-        </p>
+                </div>
+            </div>
 
-        <footer class="pie-pagi">
-            <div class="whatsapp">
-                <a href="https://walink.co/36f4a1">
-                    <i class="fa-brands fa-whatsapp"></i
-                ></a>
+            <!-- Información adicional -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="info-card fade-in-up">
+                        <p>
+                            La terapia magnética, magnetoterapia o biomagnetismo es una práctica de medicina alternativa 
+                            pseudocientífica en la que se aplican campos magnéticos estáticos. Sus practicantes afirman 
+                            que someter a ciertas partes del cuerpo a campos magnetostáticos producidos por imanes 
+                            permanentes tiene efectos beneficiosos para la salud.
+                        </p>
+                        <p>
+                            En 1988 se conoce el concepto de Par Biomagnético como un procedimiento de orden físico que 
+                            detecta de forma cualitativa e indirecta por medio de imanes de mediana intensidad las 
+                            alteraciones fundamentales del pH de los órganos internos.
+                        </p>
+                    </div>
                 </div>
-            <div class="grupo-1">
-                <div class="caja">
-                    <figure>
-                        <a href="#">
-                            <img src="multimedia/logo-bio.ico" alt="logo">
-                        </a>
-                    </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Completo -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="multimedia/logo-bio.ico" alt="Logo Biomagnetismo">
+                        <h3>Biomagnetismo Los Robles</h3>
+                    </div>
                 </div>
-                <div class="caja">
-                    <h2>SOBRE NOSOTROS</h2>
-                    <p>Desde ya hace ocho años estamos brindando nuetros servicios a los pacientes de todo el pais</p>
+                
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
                     <p>
-                        Por cualquier consulta o si necesita informacion de la terapia, turnos o ubicacion, no dude en escribirnos por whatsApp al 3827-400933.
+                        Desde ya hace ocho años estamos brindando nuestros servicios a los pacientes de todo el país.
+                    </p>
+                    <p>
+                        Por cualquier consulta o si necesita información de la terapia, turnos o ubicación, 
+                        no dude en escribirnos por WhatsApp al 3827-400933.
                     </p>
                 </div>
-                <div class="caja">
-                    <h2>SIGUENOS</h2>
-                    <div class="red-social">
-                        <a href="https://www.facebook.com/profile.php?id=100075131217667&mibextid=ZbWKwL" class="fa fa-facebook"></a>
-                        <a href="https://instagram.com/biomagnetismo_a.g?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="https://www.youtube.com/channel/UCzGqoNLAQgo3qLTULuwqPeQ" class="fa fa-youtube"></a>
-                        
+                
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=100075131217667&mibextid=ZbWKwL" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/biomagnetismo_a.g?igshid=MzRlODBiNWFlZA==" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCzGqoNLAQgo3qLTULuwqPeQ" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="grupo-2">
-                <small>&copy; 2023 <b>Biomagnetismo Medicinal "Los Robles"</b> - Todos los Derechos Reservados</small>
+            
+            <div class="footer-bottom">
+                <small>&copy; 2025 <strong>Biomagnetismo Medicinal "Los Robles"</strong> - Todos los Derechos Reservados</small>
             </div>
+        </div>
+    </footer>
 
-           
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <!-- WhatsApp Flotante -->
+    <a href="https://walink.co/36f4a1" class="whatsapp-float" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Efecto de scroll en header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Animaciones de entrada
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Cerrar navbar al hacer click en enlaces (móvil)
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+</body>
 </html>
