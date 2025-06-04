@@ -137,16 +137,17 @@
             100% { transform: translateX(-100%); }
         }
 
-        /* Hero Section */
+        /* Hero Section - Mejora del centrado */
         .hero {
             background: linear-gradient(135deg, rgba(31, 41, 55, 0.8), rgba(127, 29, 29, 0.7)), 
                         var(--light-gray);
-            min-height: 70vh;
+            min-height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             overflow: hidden;
+            text-align: center;
         }
 
         .hero::before {
@@ -162,34 +163,96 @@
             animation: backgroundShift 10s ease-in-out infinite alternate;
         }
 
+        .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6;
+}
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
         @keyframes backgroundShift {
             0% { opacity: 0.3; }
             100% { opacity: 0.6; }
         }
 
         .hero-content {
-            text-align: center;
             color: white;
-            max-width: 800px;
-            padding: 40px 20px;
+            max-width: 900px;
+            padding: 60px 20px;
             position: relative;
             z-index: 2;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto; /* Asegura centrado horizontal */
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(3rem, 6vw, 5rem);
             font-weight: 800;
-            margin-bottom: 20px;
+            margin: 0 auto 30px auto;
             text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
             color: #ffd700;
+            letter-spacing: 2px;
+            text-align: center;
+            width: 100%;
+            animation: titleFadeIn 1.5s ease-out forwards;
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        @keyframes titleFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Opcional: Añadir decoración al título */
+        .hero h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            margin: 15px auto 0;
+            border-radius: 2px;
         }
 
         .hero-subtitle {
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            margin-bottom: 30px;
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
+            margin: 0 auto 40px auto;
             opacity: 0.95;
             font-weight: 400;
             text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            max-width: 700px;
+            line-height: 1.6;
+            text-align: center;
+            width: 100%;
         }
 
         .btn-hero {
@@ -205,6 +268,7 @@
             gap: 10px;
             box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
             border: 2px solid transparent;
+            margin: 0 auto;
         }
 
         .btn-hero:hover {
@@ -424,7 +488,7 @@
             }
 
             .hero {
-                min-height: 60vh;
+                min-height: 70vh;
             }
 
             .info-card {
@@ -543,21 +607,26 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content fade-in-up">
-                <h1>Imanes que Curan</h1>
-                <p class="hero-subtitle">
-                    Los imanes estabilizan el pH de tu cuerpo, así mueren hongos, parásitos, virus y bacterias
-                </p>
-                <a href="pages/informacion.html" class="btn-hero">
-                    <i class="fas fa-info-circle"></i>
-                    Más Información
-                </a>
-            </div>
-        </div>
-    </section>
+    <!-- Hero Section - AHORA PERFECTAMENTE CENTRADO -->
+    <!-- Hero Section con video de fondo -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="multimedia/fondo.mp4" type="video/mp4">
+        Tu navegador no soporta el video de fondo.
+    </video>
+
+    <div class="hero-content fade-in-up">
+        <h1>Imanes que Curan</h1>
+        <p class="hero-subtitle">
+            Los imanes estabilizan el pH de tu cuerpo, así mueren hongos, parásitos, virus y bacterias
+        </p>
+        <a href="pages/informacion.html" class="btn-hero">
+            <i class="fas fa-info-circle"></i>
+            Más Información
+        </a>
+    </div>
+</section>
+
 
     <!-- Audio Section -->
     <section class="audio-section">

@@ -1,12 +1,11 @@
-// whatsapp-form.js
-console.log("WhatsApp Form Script conectado");
+
 
 // Función para manejar el envío del formulario
 function manejarFormularioTurno() {
     document
         .getElementById("formularioTurno")
         .addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevenir el envío normal del formulario
+            e.preventDefault(); 
 
             // Obtener los valores del formulario
             const nombre = document.getElementById("nombres").value;
@@ -36,7 +35,7 @@ function manejarFormularioTurno() {
             mensajeWhatsApp += `%0A¡Gracias por contactarnos!`;
 
             // Crear la URL de WhatsApp
-            const numeroWhatsApp = "5493827400933"; // Tu número con código de país (Argentina +54)
+            const numeroWhatsApp = "5493827400933"; 
             const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`;
 
             // Abrir WhatsApp
